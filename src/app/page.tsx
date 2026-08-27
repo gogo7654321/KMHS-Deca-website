@@ -250,7 +250,7 @@ export default function Home() {
         >
           <source src="/videos/cluster-bg.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-background/85" />
+        <div className="absolute inset-0 bg-background/70" />
         <div className="container relative z-10 py-24 text-center md:py-32">
           <DecaLogo className="mx-auto mb-6 h-12 w-12" />
           <h2 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
