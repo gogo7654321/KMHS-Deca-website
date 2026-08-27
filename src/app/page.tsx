@@ -7,11 +7,11 @@ import { InstagramIcon } from '@/components/social-icons';
 export default function Home() {
   return (
     <div className="flex flex-col">
-      {/* Hero — mobile: clean 16:9 video banner + title below; desktop: full-bleed cinematic */}
-      <section className="relative flex flex-col overflow-hidden bg-gradient-to-b from-secondary/30 to-background md:min-h-[92vh] md:justify-end md:bg-none">
+      {/* Hero — full-bleed landing video with the title in the bottom third */}
+      <section className="relative flex min-h-[92vh] flex-col justify-end overflow-hidden">
         {/* promo video */}
         <video
-          className="aspect-video w-full object-cover md:absolute md:inset-0 md:aspect-auto md:h-full md:w-full"
+          className="absolute inset-0 h-full w-full object-cover"
           autoPlay
           muted
           loop
@@ -21,13 +21,13 @@ export default function Home() {
         >
           <source src="/videos/hero-bg.mp4" type="video/mp4" />
         </video>
-        {/* scrims + DECA-blue glow — desktop only (over the full-bleed video) */}
-        <div className="absolute inset-0 hidden bg-background/30 md:block" />
-        <div className="absolute inset-x-0 top-0 hidden h-28 bg-gradient-to-b from-background/80 to-transparent md:block" />
-        <div className="absolute inset-x-0 bottom-0 hidden h-1/2 bg-gradient-to-t from-background via-background/85 to-transparent md:block" />
-        <div className="pointer-events-none absolute left-1/2 top-[72%] hidden h-[380px] w-[680px] max-w-[90vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/25 blur-[130px] md:block" />
+        {/* scrims + DECA-blue glow */}
+        <div className="absolute inset-0 bg-background/30" />
+        <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-background/80 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-background via-background/85 to-transparent" />
+        <div className="pointer-events-none absolute left-1/2 top-[72%] h-[380px] w-[680px] max-w-[90vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/25 blur-[130px]" />
 
-        <div className="container relative z-10 flex flex-col items-center py-12 text-center md:pb-[12vh] md:pt-0">
+        <div className="container relative z-10 flex flex-col items-center pb-[14vh] text-center md:pb-[12vh]">
           <p className="animate-fade-up text-xs font-bold uppercase tracking-[0.35em] text-primary sm:text-sm">
             Kennesaw Mountain Mustangs
           </p>
@@ -58,8 +58,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* scroll cue — desktop only */}
-        <div className="pointer-events-none absolute inset-x-0 bottom-6 z-10 hidden justify-center md:flex">
+        {/* scroll cue */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-6 z-10 flex justify-center">
           <ChevronDown className="h-6 w-6 animate-bounce text-white/60" />
         </div>
       </section>
