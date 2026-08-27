@@ -236,6 +236,50 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Closing CTA — animated DECA cluster background */}
+      <section className="relative overflow-hidden border-t border-border/70">
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/videos/cluster-bg-poster.jpg"
+          aria-hidden="true"
+        >
+          <source src="/videos/cluster-bg.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-background/85" />
+        <div className="container relative z-10 py-24 text-center md:py-32">
+          <DecaLogo className="mx-auto mb-6 h-12 w-12" />
+          <h2 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
+            Ready to join KMHS DECA?
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
+            No experience needed &mdash; hop in the GroupMe, come to a meeting, and be
+            part of the next big thing.
+          </p>
+          <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+            <a
+              href={links.groupMe}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-lg font-bold text-primary-foreground shadow-lg shadow-primary/30 transition-all hover:scale-[1.03] hover:bg-primary/90"
+            >
+              <MessageCircle className="h-5 w-5" /> Join our GroupMe
+            </a>
+            <a
+              href={links.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-primary px-7 py-3.5 text-lg font-bold text-primary transition-colors hover:bg-primary/10"
+            >
+              <InstagramIcon className="h-5 w-5" /> @kmhs_deca
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
