@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* DECA — deep navy base with vivid DECA blue accent */
+    --background: 214 40% 8%;
+    --foreground: 210 40% 98%;
+    --card: 214 34% 12%;
+    --card-foreground: 210 40% 98%;
+    /* DECA Blue = #0072CE */
+    --primary: 207 100% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 214 30% 16%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 214 26% 18%;
+    --muted-foreground: 214 20% 70%;
+    --accent: 202 100% 62%;
+    --accent-foreground: 214 40% 8%;
+    --border: 214 26% 22%;
+    --input: 214 26% 22%;
+    --ring: 207 100% 40%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+}
+
+/* Subtle DECA diamond-grid glow used behind hero sections */
+.deca-grid {
+  background-image:
+    radial-gradient(circle at 20% 20%, hsl(var(--primary) / 0.18), transparent 40%),
+    radial-gradient(circle at 80% 0%, hsl(var(--accent) / 0.12), transparent 45%);
+}

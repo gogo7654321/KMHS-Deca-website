@@ -1,0 +1,9 @@
+# Firebase App Hosting configuration.
+# https://firebase.google.com/docs/app-hosting/configure
+#
+# This is a static Next.js site — no server secrets or environment variables
+# are required. App Hosting auto-detects Next.js and runs `next build`.
+
+runConfig:
+  # Increase to spin up more instances under heavier traffic.
+  maxInstances: 1
