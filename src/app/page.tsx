@@ -250,13 +250,13 @@ export default function Home() {
         >
           <source src="/videos/cluster-bg.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-background/70" />
+        <div className="absolute inset-0 bg-background/50" />
         <div className="container relative z-10 py-24 text-center md:py-32">
-          <DecaLogo className="mx-auto mb-6 h-12 w-12" />
-          <h2 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
+          <DecaLogo className="mx-auto mb-6 h-12 w-12 drop-shadow-[0_2px_12px_rgba(0,0,0,0.5)]" />
+          <h2 className="font-headline text-4xl font-bold tracking-tight text-white drop-shadow-[0_2px_16px_rgba(0,0,0,0.7)] sm:text-5xl">
             Ready to join KMHS DECA?
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
+          <p className="mx-auto mt-4 max-w-xl font-medium text-white/90 drop-shadow-[0_1px_10px_rgba(0,0,0,0.7)]">
             No experience needed &mdash; hop in the GroupMe, come to a meeting, and be
             part of the next big thing.
           </p>
