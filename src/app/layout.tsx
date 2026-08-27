@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
+import { FirebaseAnalytics } from '@/components/firebase-analytics';
 
 const SITE_URL = 'https://kmhsdeca.org';
 
@@ -121,6 +122,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen">
+        <FirebaseAnalytics />
         <div className="relative flex min-h-dvh flex-col">
           <Header />
           <main className="flex-1">{children}</main>
