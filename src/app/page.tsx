@@ -236,34 +236,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Watch */}
-      <section className="border-b border-border/70 py-20 md:py-28">
-        <div className="container">
-          <div className="mb-12 text-center">
-            <p className="text-sm font-bold uppercase tracking-widest text-primary">
-              The Next Big Thing
-            </p>
-            <h2 className="mt-3 font-headline text-4xl font-bold tracking-tight sm:text-5xl">
-              See what DECA is all about
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-              DECA&rsquo;s 2026&ndash;2027 membership video &mdash; get a feel for the
-              energy, the competition, and the community.
-            </p>
-          </div>
-          <div className="mx-auto max-w-4xl overflow-hidden rounded-2xl border border-border bg-black shadow-2xl">
-            <video
-              className="aspect-video w-full"
-              controls
-              preload="none"
-              poster="/videos/hero-poster.jpg"
-            >
-              <source src="/videos/next-big-thing-2026-2027.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
