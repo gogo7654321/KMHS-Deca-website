@@ -46,14 +46,14 @@ export const metadata: Metadata = {
     title: 'KMHS DECA | Kennesaw Mountain High School DECA',
     description:
       'Compete, lead, and grow with Kennesaw Mountain High School DECA. Whatever career field you plan on going into, DECA has something to offer you.',
-    images: [{ url: '/logos/deca-lockup-white.png', width: 1200, height: 630, alt: 'KMHS DECA' }],
+    // og image is auto-generated from src/app/opengraph-image.png
   },
   twitter: {
     card: 'summary_large_image',
     title: 'KMHS DECA',
     description:
       'The official Kennesaw Mountain High School DECA chapter website. Designed & developed by Neil Mendpara.',
-    images: ['/logos/deca-lockup-white.png'],
+    // twitter image is auto-generated from src/app/twitter-image.png
   },
 };
 

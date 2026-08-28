@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { ArrowRight, MessageCircle, Trophy, ChevronDown } from 'lucide-react';
-import { benefits, links } from '@/lib/data';
+import { ArrowRight, MessageCircle, Trophy, ChevronDown, CalendarDays } from 'lucide-react';
+import { benefits, links, nextMeeting } from '@/lib/data';
 import { DecaLogo } from '@/components/deca-logo';
 import { InstagramIcon } from '@/components/social-icons';
 
@@ -74,6 +74,32 @@ export default function Home() {
             matter what career field you&rsquo;re headed toward, DECA has something to
             offer.
           </p>
+        </div>
+      </section>
+
+      {/* Next meeting */}
+      <section className="border-b border-border/70 py-8">
+        <div className="container">
+          <div className="mx-auto flex max-w-2xl flex-col items-center gap-3 rounded-2xl border border-primary/30 bg-primary/5 px-6 py-5 text-center sm:flex-row sm:text-left">
+            <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-primary/15 text-primary">
+              <CalendarDays className="h-6 w-6" />
+            </div>
+            <div className="flex-1">
+              <p className="text-xs font-bold uppercase tracking-widest text-primary">
+                Next Meeting
+              </p>
+              <p className="font-headline text-lg font-bold">{nextMeeting.label}</p>
+              <p className="text-sm text-muted-foreground">{nextMeeting.detail}</p>
+            </div>
+            <a
+              href={links.groupMe}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex flex-shrink-0 items-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-sm font-bold text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              <MessageCircle className="h-4 w-4" /> GroupMe
+            </a>
+          </div>
         </div>
       </section>
 

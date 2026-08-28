@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { execs, links } from '@/lib/data';
+import { ExecCard } from '@/components/exec-card';
 import { InstagramIcon } from '@/components/social-icons';
 
 export const metadata: Metadata = {
@@ -26,21 +27,7 @@ export default function LeadershipPage() {
 
       <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {execs.map((exec) => (
-          <a
-            key={exec.slug}
-            href={exec.graphic}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group block overflow-hidden rounded-2xl border border-border bg-card shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-2xl hover:shadow-primary/10"
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={exec.graphic}
-              alt={`${exec.name} — ${exec.role}, KMHS DECA`}
-              className="w-full transition-transform duration-500 group-hover:scale-[1.02]"
-              loading="lazy"
-            />
-          </a>
+          <ExecCard key={exec.slug} exec={exec} />
         ))}
       </div>
 
