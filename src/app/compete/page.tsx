@@ -5,7 +5,7 @@ import {
   ListChecks,
   PlayCircle,
   ExternalLink,
-  Mail,
+  MessageCircle,
   Lock,
 } from 'lucide-react';
 import { links, clusters } from '@/lib/data';
@@ -103,15 +103,16 @@ export default function CompetePage() {
           <div>
             <h2 className="font-headline text-xl font-bold">DECA+ login credentials</h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              If you&rsquo;re participating in competition, email our advisor{' '}
-              <span className="font-semibold text-foreground">Paul Goodman</span> for
-              your DECA+ login.
+              If you&rsquo;re participating in competition, ask an officer or message us
+              on GroupMe for your DECA+ login.
             </p>
             <a
-              href={`mailto:${links.advisorEmail}?subject=DECA%2B%20Login%20Request`}
+              href={links.groupMe}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-3 inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-bold text-primary-foreground transition-colors hover:bg-primary/90"
             >
-              <Mail className="h-4 w-4" /> {links.advisorEmail}
+              <MessageCircle className="h-4 w-4" /> Ask on GroupMe
             </a>
           </div>
         </div>

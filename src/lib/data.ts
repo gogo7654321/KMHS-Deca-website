@@ -32,7 +32,6 @@ export const links = {
   decaEvents: 'https://www.deca.org/compete#competitive-events',
   wordsQuizlet:
     'https://quizlet.com/411372022/words-to-use-in-competition-flash-cards/',
-  advisorEmail: 'paul.goodman@cobbk12.org',
 };
 
 // Update this line when the next meeting changes.

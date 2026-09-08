@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { MessageCircle, Mail } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 import { DecaLogo } from '@/components/deca-logo';
 import { InstagramIcon, TikTokIcon } from '@/components/social-icons';
 import { navLinks, links } from '@/lib/data';
@@ -82,14 +82,6 @@ export function Footer() {
                   className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
                 >
                   <MessageCircle className="h-4 w-4" /> Join our GroupMe
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`mailto:${links.advisorEmail}`}
-                  className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
-                >
-                  <Mail className="h-4 w-4" /> {links.advisorEmail}
                 </a>
               </li>
             </ul>

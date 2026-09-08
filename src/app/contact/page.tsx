@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { MessageCircle, Mail, Rocket } from 'lucide-react';
+import { MessageCircle, Rocket } from 'lucide-react';
 import { InstagramIcon, TikTokIcon } from '@/components/social-icons';
 import { links } from '@/lib/data';
 
@@ -35,20 +35,11 @@ const channels = [
     cta: 'Join the GroupMe',
   },
   {
-    icon: Mail,
-    title: 'Advisor',
-    detail: 'Paul Goodman',
-    description:
-      'Faculty advisor. Email for DECA+ competition logins or chapter questions.',
-    href: `mailto:${links.advisorEmail}`,
-    cta: links.advisorEmail,
-  },
-  {
     icon: Rocket,
     title: 'DECA+ Prep Hub',
     detail: 'decaplus.org',
     description:
-      'Our competition prep platform. Email the advisor for a login if you are competing.',
+      'Our competition prep platform. Ask an officer or message us on GroupMe for a login if you are competing.',
     href: links.decaPlus,
     cta: 'Open DECA+',
   },
