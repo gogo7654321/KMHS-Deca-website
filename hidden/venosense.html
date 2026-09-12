@@ -479,7 +479,7 @@ footer .fn strong{color:#fff}
     <li><a href="#p4"><span class="pn">Part 4</span><span class="pt">The VenoSense Playbook</span><span class="pd">Your facts mapped to each scored section &mdash; and your five hard truths</span></a></li>
     <li><a href="#p5"><span class="pn">Part 5</span><span class="pt">The 20-Slide Build</span><span class="pd">Slide by slide, the 15-minute budget, and the humanitarian thread</span></a></li>
     <li><a href="#p6"><span class="pn">Part 6</span><span class="pt">Twenty-Week Prep Plan</span><span class="pd">Straight to State, built around a mock-judging program</span></a></li>
-    <li><a href="#p7"><span class="pn">Part 7</span><span class="pt">Judge Q&amp;A Drill Bank</span><span class="pd">47 questions with model answers</span></a></li>
+    <li><a href="#p7"><span class="pn">Part 7</span><span class="pt">Judge Q&amp;A Drill Bank</span><span class="pd">51 questions with model answers</span></a></li>
     <li><a href="#p8"><span class="pn">Part 8</span><span class="pt">Field Kit</span><span class="pd">Interview scripts and the bench protocol &mdash; print these and carry them</span></a></li>
     <li><a href="#p9"><span class="pn">Part 9</span><span class="pt">Competition Day</span><span class="pd">Night before, morning of, nerves, and the line that starts your Q&amp;A</span></a></li>
   </ol>
@@ -1296,6 +1296,51 @@ footer .fn strong{color:#fff}
 
     <h3>Section V &mdash; Solution <span class="tag blue">15 pts</span></h3>
     <p class="measure">"Demonstrates that the idea is feasible" is the clause you must beat, and it is where a concept-stage entry is most exposed. Give this section the most slides &mdash; seven.</p>
+
+    <h3>Three failure modes, not one <span class="tag ox">Major correction &mdash; 12 Sep 2026</span></h3>
+
+    <p class="measure">An internist, after hearing the concept: <em>"I didn't hear clots or contamination when you were explaining it"</em> &mdash; and then the sharper version, that the pitch treats every rejection as though it were hemolysis, <strong>and they are not.</strong> He is right, and this was the single most damaging gap in the pitch. Fixing it roughly doubles what you can honestly claim.</p>
+
+    <div class="alert">
+      <h4>Hemolysis is not even reliably number one</h4>
+      <p>The Wellstar medical technologist ranked them <strong>hemolysis, clotted, contaminated.</strong> The published meta-analysis ranks them <strong>clotted 32%, hemolysis 23%, insufficient volume 23%.</strong> Different sites, different order. <strong>Never say "hemolysis is the number one reason specimens are rejected" as a flat fact</strong> &mdash; a lab-literate judge may have the opposite figure.</p>
+      <p style="margin-top:.9em"><strong>Say this instead, which is true everywhere:</strong> <em>"Hemolysis, clotting and contamination are the top three reasons specimens get rejected, and together they are the majority. All three happen during the draw &mdash; none of them happen in the laboratory."</em></p>
+    </div>
+
+    <h4 class="sh">What you can honestly claim, by failure mode</h4>
+    <div class="tw">
+      <table>
+        <thead><tr><th style="width:130px">Failure</th><th>What actually causes it</th><th style="width:210px">What VenoSense does</th></tr></thead>
+        <tbody>
+          <tr><td class="ex"><strong>Hemolysis</strong></td><td class="ex">Tourniquet left on past a minute (OR 19.5); excessive aspiration rate and shear; drawing off an IV catheter (5.6% vs 0.3%)</td><td class="ex"><strong>Direct.</strong> The cuff timer and the fill-rate sensor measure both dominant mechanisms.</td></tr>
+          <tr><td class="ex"><strong>Clotting</strong></td><td class="ex">Slow fill &mdash; blood sits before it mixes with the additive; underfilled tubes, so the blood-to-additive ratio is wrong; long total draw time; inadequate mixing afterwards</td><td class="ex"><strong>Direct for three of four.</strong> The holder collar already measures fill rate, fill volume and total draw time. <strong>Same sensor. No new hardware.</strong> It cannot see post-collection mixing.</td></tr>
+          <tr><td><strong>Contamination</strong></td><td>Drawing from an IV or central line rather than a fresh stick; order-of-draw errors carrying additive between tubes; skin-prep failure</td><td><strong>Partial, and say so.</strong> A line draw has a different flow signature from a fresh venipuncture, so we can flag the highest-risk pathway. <strong>We do not detect contamination itself.</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="alert teal">
+      <h4>Why this makes the pitch stronger &mdash; four reasons</h4>
+      <ul class="tight" style="margin-top:10px">
+        <li><strong>It roughly doubles your addressable share.</strong> Hemolysis alone is about 23% of rejections. Hemolysis plus clotting is roughly 55%. <strong>Same device, same sensors, twice the problem.</strong></li>
+        <li><strong>The clotting mechanism costs you nothing to claim.</strong> Fill rate is already module 2A's core measurement. You were solving clotting the entire time and not saying so.</li>
+        <li><strong>Your best pathos story is a clotting story, not a hemolysis one.</strong> The medical technologist explained baby samples exactly this way &mdash; drawn from the foot, flow is very slow, and slow flow clots. <em>"Why would you want to put that baby through pain and redraw?"</em> That quote sits on the clotting pathway, which you previously did not claim.</li>
+        <li><strong>It survives the attack that was coming anyway.</strong> "You're treating every rejection as hemolysis" is a devastating question if you have no answer and a strength if you do. See drill 49.</li>
+      </ul>
+    </div>
+
+    <div class="alert gold">
+      <h4>The UVP sentence this unlocks &mdash; use it, it is better than what you had</h4>
+      <p style="font-size:18px;line-height:1.6;color:var(--ink);font-family:var(--f-display);font-weight:600;border-left:3px solid var(--gold,#b58900);padding-left:16px">"We don't measure hemolysis. We measure the draw &mdash; and the three commonest reasons a specimen gets rejected are all things that happen during it."</p>
+      <p style="margin-top:14px">That reframes the product from a single-defect detector into <strong>instrumentation for the procedure</strong>, which is both more honest and more ambitious. It also makes the dataset claim land harder: nobody has pressure and flow signatures paired with <em>any</em> rejection outcome, not just hemolysed ones.</p>
+    </div>
+
+    <div class="alert">
+      <h4>The line-draw question &mdash; know where you do and do not apply</h4>
+      <p>In the ICU, and often on the floors, blood comes off an existing arterial or central line rather than a fresh venipuncture. <strong>There is no tourniquet on a line draw, so module 2B does nothing there.</strong> Do not let a judge discover that before you say it.</p>
+      <p style="margin-top:.9em"><strong>What still applies:</strong> line draws still fill tubes, so the collar still measures fill rate, underfill and draw time &mdash; the clotting pathway. And line draws are the <em>highest-hemolysis</em> collection method in the published literature, so flagging that a draw came off a line is itself a quality signal a lab would want.</p>
+      <p style="margin-top:.9em"><strong>Open question, and it decides whether the ICU is a slide or a footnote:</strong> what share of ICU labs come off a line versus a fresh stick? Ask the next intensivist or ICU nurse. Until you know, do not claim the ICU.</p>
+    </div>
 
     <h4 class="sh">The mechanism, stated precisely</h4>
     <ul class="tight">
@@ -2123,6 +2168,125 @@ footer .fn strong{color:#fff}
       </ul>
     </div>
 
+    <h3>How this industry actually prices &mdash; and the model you should use <span class="tag ox">Researched 12 Sep 2026</span></h3>
+
+    <p class="measure">An internist told you to stop inventing a pricing model and go look at how pharmaceutical and hospital-product companies actually do it. <strong>He was right, and the research produced a better answer than anything in this guide.</strong> There are four models in this industry. You are currently using the only one that is not native to it.</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th style="width:190px">Model</th><th>How it works</th><th style="width:230px">Verdict for VenoSense</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Capital purchase</strong></td><td>Hospital buys the equipment outright. Goes to the <strong>capital budget</strong>, gets ranked by the CEO and CFO against every other capital request, approved in an annual cycle until the money runs out.</td><td><strong>Worst option.</strong> Slow, brutally competitive, and a first-time vendor with no installed base loses to an MRI replacement every time.</td></tr>
+          <tr><td class="ex"><strong>Reagent rental / placement</strong></td><td class="ex">The vendor <strong>places the instrument at no capital cost and retains ownership</strong>, and the customer commits to a minimum volume of reagents or consumables at a <strong>cost per test</strong> over a multi-year term. This is how your Roche analyser got into that lab.</td><td class="ex"><strong>Use this.</strong> It is the buyer's own native pattern, in the exact department you are selling to.</td></tr>
+          <tr><td><strong>Per-seat subscription</strong></td><td>Monthly fee per user, SaaS-style.</td><td>What you have now. <strong>Not a pattern this industry uses for clinical hardware</strong> &mdash; which is exactly what the internist reacted to.</td></tr>
+          <tr><td><strong>GPO contract</strong></td><td>Not a price model &mdash; a <strong>channel.</strong> <strong>96&ndash;98% of US hospitals buy through group purchasing organisation contracts</strong> (Vizient, Premier, HealthTrust), and a <strong>Value Analysis Committee</strong> of clinicians, supply chain and finance gates every new product on clinical value, financial impact and operational fit.</td><td>This is <em>how you sell</em>, whichever model you pick. Know both terms.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="alert gold">
+      <h4>The single sentence that makes reagent rental the right answer</h4>
+      <p>From the procurement literature, on why labs choose it: <strong>there is no large capital investment upfront, "meaning you do not have to go through the capital committee."</strong></p>
+      <p style="margin-top:.9em"><strong>That is the whole argument.</strong> The capital committee is where an unknown vendor with no installed base dies &mdash; you are ranked against imaging equipment and building systems by a CFO who has never heard of you. <strong>Placement routes you around it entirely</strong> and turns your price into an operating-budget line item, which is approved at a far lower level and on a far shorter cycle.</p>
+      <p style="margin-top:.9em">It also dissolves the objection the internist raised. You are no longer selling a subscription nobody wants &mdash; <strong>you are selling a cost per draw, which is the same shape as the cost per test the lab already pays every single day.</strong></p>
+    </div>
+
+    <h4 class="sh">The VenoSense version &mdash; and the number it produces</h4>
+    <div class="tw">
+      <table>
+        <tbody>
+          <tr><td style="width:320px">Sensors placed at the hospital</td><td class="ex"><strong>$0 capital</strong> &mdash; you retain ownership</td></tr>
+          <tr><td>Hospital commits to</td><td>A multi-year agreement with a minimum monitored-draw volume</td></tr>
+          <tr><td>You charge</td><td class="ex"><strong>A cost per monitored draw</strong></td></tr>
+          <tr><td>Target revenue, 650-bed hospital</td><td class="num">~$73,700/yr</td></tr>
+          <tr><td>Annual draw volume (~2,000/day)</td><td class="num">~730,000</td></tr>
+          <tr><td class="ex"><strong>Implied price</strong></td><td class="num ex"><strong>$0.10 per draw</strong></td></tr>
+          <tr><td class="ex"><strong>Against a preanalytical error at $357</strong></td><td class="ex"><strong>One prevented error pays for 3,570 draws.</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="alert teal">
+      <h4>Say it to the judge like this</h4>
+      <p style="font-size:17px;line-height:1.65;color:var(--ink);font-family:var(--f-display);font-weight:600;border-left:3px solid var(--teal);padding-left:16px">"We don't ask a hospital for capital. We place the sensors free and charge ten cents a draw &mdash; the same way their analyser vendor places the analyser and charges per test. That means we never go to the capital committee, which is where new vendors die. And at three hundred and fifty-seven dollars per preanalytical error, one prevented error pays for three and a half thousand draws."</p>
+      <p style="margin-top:14px">Four things in four sentences: you know the industry's native model, you know the failure mode you are avoiding, you have a unit price, and you have a payback ratio. <strong>A generalist judge will not know the term "reagent rental" &mdash; which is why explaining it in one clause is worth more than using it correctly.</strong></p>
+    </div>
+
+    <div class="alert">
+      <h4>Two things a sharp judge will come back with &mdash; and both favour you</h4>
+      <p><strong>"Placement means you finance the hardware. Where does that cash come from?"</strong> At a $65 bill of materials, placing 100 units costs you <strong>$6,500</strong> against a contract worth $73,700 a year. <strong>Placement inventory pays back in about a month.</strong> Reagent rental is punishing for an analyser vendor placing a $200,000 instrument; at your bill of materials it is close to free. <strong>Put placement inventory in your use of funds.</strong></p>
+      <p style="margin-top:.9em"><strong>"How do you actually get in the door?"</strong> Through a GPO contract and a Value Analysis Committee &mdash; a cross-functional group of clinicians, supply chain and finance that reviews clinical value, financial impact and operational fit. <strong>That is also the answer to why your evidence has to be a pilot, not a pitch:</strong> the committee is built to demand exactly that.</p>
+    </div>
+
+    <div class="alert gold">
+      <h4>And it delivers his differential-pricing point for free</h4>
+      <p>His India example was about pricing to what a market can bear. <strong>A cost-per-draw does that automatically</strong> &mdash; a rural critical-access hospital doing 200 draws a day pays a tenth of what a 650-bed academic centre doing 2,000 pays, with no separate SKU, no negotiation and no discount table. <strong>Price scales with the size of the problem, which is the fairest version of his argument and the easiest to defend on stage.</strong></p>
+    </div>
+
+    <h3>Revised economics <span class="tag ox">Supersedes every figure above &mdash; 12 Sep 2026</span></h3>
+
+    <p class="measure">The published literature was pulled after an internist asked the right question: <em>"out of a thousand specimens, what percentage would be hemolysed? That's what you need to know."</em> <strong>Three numbers in this guide were wrong. The replacements are weaker headlines and far stronger arguments.</strong></p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Was</th><th>Is</th><th>Why it matters</th></tr></thead>
+        <tbody>
+          <tr><td>$42 per redraw</td><td class="ex"><strong>$357 per preanalytical error</strong> (inpatient, non-critical-care; $162 critical care; ~$349 average)</td><td class="ex">Published, North American, citable. Your $42 measured supplies and phlebotomist time only.</td></tr>
+          <tr><td>$383,250 hospital baseline</td><td class="ex"><strong>~$1.2M/year at a 650-bed hospital</strong> &mdash; 0.23%&ndash;1.2% of total operating cost</td><td class="ex">A published per-hospital figure with a named bed count beats anything you derive.</td></tr>
+          <tr><td>5&ndash;10% rejection rate</td><td class="ex"><strong>ASCP benchmark: &le;2% hemolysis is best practice.</strong> US rejection ~0.55%; ED 3&ndash;12.4%; high-risk areas 25&ndash;30%</td><td class="ex">Smaller number, much better argument &mdash; a professional standard being missed tenfold where the sickest patients are.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="alert gold">
+      <h4>The new evidence anchor &mdash; and it makes your 70% look conservative</h4>
+      <p>An emergency-department study found <strong>5.6% hemolysis on IV-catheter draws against 0.3% on straight venipuncture</strong> &mdash; same department, same patients. A synthesis of eleven studies put the risk ratio at <strong>0.16</strong> for venipuncture versus IV starts.</p>
+      <p style="margin-top:.9em"><strong>The published gap between good and bad technique is fifteen to eighteen times.</strong> You are claiming a 70% reduction &mdash; a fraction of what technique alone already explains. <strong>Say that out loud.</strong> It converts your headline from a bold claim into a deliberately modest one, which is exactly how the transcripts show winners frame numbers.</p>
+      <p style="margin-top:.9em">Pair it with Saleem: that study says tourniquet <em>time</em> drives hemolysis; this one says collection <em>method</em> does. <strong>Two independent bodies of evidence, one conclusion: the draw is the variable.</strong></p>
+    </div>
+
+    <h4 class="sh">The rebuilt ROI chain &mdash; every step auditable</h4>
+    <div class="tw">
+      <table>
+        <tbody>
+          <tr><td style="width:300px">650-bed hospital, annual preanalytical cost</td><td class="num">$1,200,000</td><td class="ex">Published</td></tr>
+          <tr><td>Hemolysis + clotting share of rejections</td><td class="num">~55%</td><td class="ex">Meta-analysis: clotted 32%, hemolysis 23%</td></tr>
+          <tr><td>= Cost in the two modes you address</td><td class="num">$660,000</td><td></td></tr>
+          <tr><td>Share addressable by draw instrumentation</td><td class="num">50%</td><td class="ex"><strong>Stated assumption</strong> &mdash; excludes mixing, labelling, wrong-patient</td></tr>
+          <tr><td>= Addressable</td><td class="num">$330,000</td><td></td></tr>
+          <tr><td>Target reduction</td><td class="num">70%</td><td class="ex">Pilot hypothesis, not a result</td></tr>
+          <tr><td class="ex"><strong>Annual saving</strong></td><td class="num ex"><strong>$231,000</strong></td><td></td></tr>
+          <tr><td>Year 1 cost (~100 stations)</td><td class="num">$73,700</td><td class="ex">Or an equivalent annual contract</td></tr>
+          <tr><td class="ex"><strong>Year 1 net &middot; ROI</strong></td><td class="num ex"><strong>+$157,300 &middot; 213%</strong></td><td></td></tr>
+          <tr><td>Year 2+ net (contract only)</td><td class="num">+$172,200/yr</td><td></td></tr>
+          <tr><td class="ex"><strong>Five-year net &middot; ROI</strong></td><td class="num ex"><strong>+$846,100 &middot; 274%</strong></td><td class="ex">$1,155,000 saved against $308,900</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="alert">
+      <h4>Three sanity checks a judge will run &mdash; have these ready</h4>
+      <ul class="tight" style="margin-top:10px">
+        <li><strong>6.1% of the problem.</strong> $73,700 against $1.2M. <em>"We cost about six percent of what the problem costs you."</em></li>
+        <li><strong>$113 per bed</strong> in year one, $90 after.</li>
+        <li><strong>Under ten cents per draw.</strong> At roughly 2,000 draws a day that is $0.10 each &mdash; verify your volume, but it is pennies either way.</li>
+      </ul>
+      <p style="margin-top:14px"><strong>On payback: the arithmetic says about one month. Do not say that.</strong> It assumes perfect use from day one, which no judge will believe and no hospital has experienced. <strong>Allow a six-month adoption ramp and say three to four months</strong> &mdash; and say <em>why</em> you slowed it down. Volunteering the ramp is worth more than the faster number.</p>
+    </div>
+
+    <div class="srcline" style="margin-bottom:22px">
+      <b>New sources &mdash; add all of these to slide 19:</b>
+      Carraro P, Plebani M, et al. &mdash; specimen rejection and preanalytical error cost literature, incl. <i>The cost of poor blood specimen quality and errors in preanalytical processes</i>, <i>Clinical Biochemistry</i> (2013) &mdash; per-error costs $162.18 / $357.15 / $337.05 and the ~$1.2M per 650-bed hospital figure &middot;
+      <i>Blood specimen rejection rate in clinical laboratory: a systematic review and meta-analysis</i> (2022) &mdash; pooled rejection 1.99% (Americas 0.55%); clotted 32.23%, hemolysis 22.87%, insufficient volume 22.81% &middot;
+      American Society for Clinical Pathology &mdash; &le;2% hemolysis benchmark &middot;
+      Lowe G, et al., <i>Nursing blood specimen collection techniques and hemolysis rates in an emergency department: venipuncture versus intravenous catheter collection</i>, <i>J Emerg Nurs</i> (2008) &mdash; 5.6% vs 0.3% &middot;
+      <i>Handling hemolytic blood samples from high-risk clinical areas: a call to action</i>, <i>J Appl Lab Med</i> (2025) &mdash; ED hemolysis 25&ndash;30% &middot;
+      <strong>Iatrogenic anaemia set:</strong> <i>A contemporary analysis of phlebotomy and iatrogenic anemia development throughout hospitalization in critically ill adults</i> (2022) &mdash; median 232 mL per hospitalisation, ~29 mL/day, 5.2 draws/day &middot; <i>Patient harm associated with serial phlebotomy and blood waste in the intensive care unit</i>, <i>PLOS One</i> (2020) &mdash; 48.1 &plusmn; 22.2 mL/patient-day; OR 1.18 for Hb &lt;80 g/L and 1.17 for transfusion per 5 mL/day; daily volume predicted transfusion and inpatient mortality &middot; <i>Anemia, transfusion and phlebotomy practices in critically ill patients with prolonged ICU length of stay</i> &mdash; one-third of ICU red-cell transfusions attributable to phlebotomy.
+       &middot;
+      <strong>Pricing-model set:</strong> <i>An approach to include the cost of consumables in biochemistry analyzer procurement on the reagent rental model</i> (2024) &mdash; reagent-rental structure and cost-per-test economics; cost per reportable test 47.4% lower than purchased equipment &middot; industry procurement literature on reagent rental and analyser leasing &mdash; placement at no capital cost, vendor retains ownership, "you do not have to go through the capital committee" &middot; Healthcare Supply Chain Association and GAO materials on group purchasing organisations &mdash; <strong>96&ndash;98% of US hospitals purchase through GPO contracts</strong> &middot; hospital Value Analysis Committee literature &mdash; cross-functional review of clinical value, financial impact and operational fit &middot; hospital capital-versus-operating budget guidance on capital committee ranking cycles.
+      <br><br><strong>Verify each paper before it reaches a slide.</strong> These were located by literature search; pull the originals, confirm the figures and the year, and cite in APA with hanging indents.
+    </div>
+
     <div class="srcline">
       <b>Sources for Part 4:</b> <code>VenoSense AI &ndash; Blue Ocean Pitch Guide (v4).pdf</code> and <code>VenoSense AI &ndash; NextUp Founders Prize Application.pdf</code> &mdash; factual, technical and financial content only. Competitive landscape on Vitestro Aletta from published reporting on the August 2026 FDA De Novo authorization, the ADOPT trial in <i>Clinical Chemistry</i> (April 2026), and Vitestro's own product materials; ED hemolysis rates and the ASCP benchmark, and phlebotomy workforce figures, from published clinical and labor-market literature. Small-clinic break-even figures derived here from the verified $149 kit, $49/month membership and $42 redraw cost. All arithmetic independently re-verified: 73/85=85.9% &middot; 42/85=49.4% &middot; BOM $48&ndash;$82 &middot; margins 45.0%/75.9% &middot; 450M&times;1%&times;$349=$1.5705B &middot; ROI chain to +$194,300 and 3.3-month payback. Competition-specific strategy frameworks from those documents were deliberately excluded; all structure here follows the DECA outline in <code>HS_EIP_Guidelines.pdf</code>.
     </div>
@@ -2327,6 +2491,104 @@ footer .fn strong{color:#fff}
       </ul>
     </div>
 
+    <h3>TRACE &mdash; your Solution acronym <span class="tag teal">Structural decision, now made</span></h3>
+
+    <p class="measure">Both ICDC transcripts hang their solution on an acronym, and ROM turns theirs into a <em>dialogue</em> &mdash; "So, Anaka, what does A stand for?" That device solves your two-person handoff completely, but it needs an acronym to hang on. <strong>Here it is, and it maps one-to-one onto your five Solution components in the order they actually happen.</strong></p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th style="width:38px"></th><th style="width:140px">Stands for</th><th>What you say</th><th style="width:70px">Speaker</th></tr></thead>
+        <tbody>
+          <tr><td class="num ex"><strong>T</strong></td><td class="ex"><strong>Timer</strong></td><td class="ex">The cuff sensor starts an occlusion timer the moment the tourniquet goes on. Haptic pulse at 45 seconds, alarm at 60, against the published one-minute limit. <strong>Nobody in a hospital times this today.</strong></td><td class="ex">B</td></tr>
+          <tr><td class="num"><strong>R</strong></td><td><strong>Rate</strong></td><td>The holder collar measures how fast the tube is filling &mdash; the aspiration rate. Pull too hard and you shear the cells. That is the second unmeasured variable.</td><td>A</td></tr>
+          <tr><td class="num"><strong>A</strong></td><td><strong>Analysis</strong></td><td>An on-device classifier decides what counts as abnormal <em>for this patient</em> &mdash; a paediatric arm and an oncology arm are not the same arm. No cloud, no latency, no patient data leaving the device.</td><td>B</td></tr>
+          <tr><td class="num"><strong>C</strong></td><td><strong>Cue</strong></td><td class="ex">A single haptic pulse at the cuff. <strong>Not an alarm &mdash; a cue.</strong> It is on the tourniquet, not a phone, so nothing enters the sterile field and no policy is broken.</td><td>A</td></tr>
+          <tr><td class="num"><strong>E</strong></td><td><strong>Evidence</strong></td><td>Quality telemetry into the hospital's own LIS over HL7. For the first time the draw leaves a record &mdash; which is what the lab is actually buying.</td><td>B</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="alert teal">
+      <h4>Why TRACE and not something else</h4>
+      <p><strong>It is the literal noun for your own evidence.</strong> The chart on slide 13 <em>is</em> a pressure trace. The word does double duty as the acronym and as the thing the judge is looking at.</p>
+      <p style="margin-top:.9em"><strong>It works as a verb, which gives you your closing claim:</strong> <em>"Nobody has ever traced what happens between the tourniquet and the tube. We're the first."</em> Sentence-level ownership of a single word is worth more than a clever expansion.</p>
+      <p style="margin-top:.9em"><strong>And the order is the procedure's own order</strong> &mdash; measure, measure, decide, cue, record. You are not forcing five features into five letters; you are narrating the draw. That is why the letters can be traded back and forth without the argument losing its thread.</p>
+    </div>
+
+    <h3>The script scaffold &mdash; what is locked and what is still a slot <span class="tag ox">Build it in two passes</span></h3>
+
+    <p class="measure"><strong>This is deliberately not a finished script.</strong> Roughly a third of your spoken content does not exist yet &mdash; interview quotes, bench numbers, survey <em>n</em>. Writing those sentences now means writing them twice, and worse, it means getting attached to sentences your evidence may not support. <strong>So: every sentence below in quotation marks is final and should be memorised. Every <span class="tag ox">SLOT</span> is a hole with a known shape, waiting for a specific piece of evidence.</strong> Fill them as the evidence lands, and the script assembles itself.</p>
+
+    <div class="alert">
+      <h4>0:00&ndash;0:30 &mdash; Setup <span class="tag">Silent</span></h4>
+      <p><strong>A:</strong> handshake, both names, leave-behind into the judge's hands. <strong>B:</strong> panel up, rig down, laptop already open on the title slide. <strong>Neither of you narrates any of this.</strong></p>
+    </div>
+
+    <div class="alert">
+      <h4>0:30&ndash;2:00 &mdash; I. Overview <span class="tag blue">15 pts</span> <span class="tag">Speaker A</span></h4>
+      <p style="border-left:3px solid var(--teal);padding-left:16px;font-family:var(--f-display);font-weight:600;color:var(--ink);line-height:1.6">"Three weeks ago a classmate of mine went in for a blood draw. They couldn't find the vein in his arm &mdash; he was dehydrated &mdash; so they moved to the back of his hand and tried again."</p>
+      <p style="margin-top:12px;border-left:3px solid var(--teal);padding-left:16px;font-family:var(--f-display);font-weight:600;color:var(--ink);line-height:1.6">"Think about the needle. Think about finding the vein. Nobody thinks about the ninety seconds the tourniquet was on &mdash; and nobody measures it."</p>
+      <p style="margin-top:12px"><strong>Then names and hooks</strong> &mdash; ten seconds, both of you. ROM did this and won; McDonald's skipped it and placed fourth. <span class="tag ox">SLOT</span> one line each: your name and why <em>you personally</em> care about this. Yours writes itself &mdash; you read the incident reports.</p>
+      <p style="margin-top:12px"><strong>Then all four rubric elements, in one breath</strong> &mdash; who it is for, what the problem is, what makes you different, what you want. Do not skip this to stay in the story; item one is 15 points and it is scored on those four things being present.</p>
+    </div>
+
+    <div class="alert">
+      <h4>2:00&ndash;4:00 &mdash; II. Business Opportunity <span class="tag blue">15 pts</span> <span class="tag">Speaker A</span></h4>
+      <p><strong>The numbers block, clustered &mdash; the transcripts show winners using ~25 figures, so do not hold back, just group them:</strong> roughly 450 million hospital draws a year, over $1.5 billion in preanalytical waste at a deliberately conservative one percent error rate, and at one Atlanta hospital 25 rejections a day at $42 each &mdash; $383,250 a year from one building.</p>
+      <p style="margin-top:12px"><strong>Then Saleem, which is the spine of the whole pitch:</strong></p>
+      <p style="margin-top:8px;border-left:3px solid var(--teal);padding-left:16px;font-family:var(--f-display);font-weight:600;color:var(--ink);line-height:1.6">"When researchers ran the regression, every suspected cause washed out except one. A tourniquet left on longer than a minute raised the odds of hemolysis by a factor of nineteen. One-point-three percent became twenty-point-two."</p>
+      <p style="margin-top:12px"><strong>Then the absence-is-evidence turn &mdash; this is your original contribution and it should be delivered slowly:</strong></p>
+      <p style="margin-top:8px;border-left:3px solid var(--teal);padding-left:16px;font-family:var(--f-display);font-weight:600;color:var(--ink);line-height:1.6">"I read 85 incident reports from a hospital laboratory. Eighty-six percent of the failures happened before the blood ever reached a machine. And in all 85 reports, the tourniquet was mentioned exactly once &mdash; to say it had been left on for an unknown length of time."</p>
+      <p style="margin-top:12px"><strong>Humanitarian line 2:</strong> "Twenty-five rejections a day is twenty-five people who get stuck a second time &mdash; and not one of them was told why."</p>
+      <p style="margin-top:12px"><span class="tag ox">SLOT</span> one sentence of interview corroboration: <em>"Of the thirteen clinicians we interviewed across three health systems, ___ told us the same thing without being prompted."</em></p>
+    </div>
+
+    <div class="alert">
+      <h4>4:00&ndash;6:00 &mdash; III. Customer Segments <span class="tag blue">15 pts</span> <span class="tag">Speaker A</span></h4>
+      <p><strong>Three segments, defended rather than described:</strong> the hospital laboratory is the buyer; the nurse who draws as a secondary duty is the highest-error user; the rural and independent clinic is the underserved third.</p>
+      <p style="margin-top:12px"><strong>The nurse finding, and it must never sound like blame:</strong></p>
+      <p style="margin-top:8px;border-left:3px solid var(--teal);padding-left:16px;font-family:var(--f-display);font-weight:600;color:var(--ink);line-height:1.6">"Nursing staff produce four times the hemolysis rate of phlebotomists. That is not carelessness. It is the group with the least training doing the hardest draws, and nobody ever gave them a tool."</p>
+      <p style="margin-top:12px"><strong>Rural line:</strong> "A hundred and twenty of Georgia's hundred and fifty-nine counties are rural. A redraw there is not an inconvenience &mdash; it is another drive."</p>
+      <p style="margin-top:12px"><span class="tag ox">SLOT</span> the collection-method split from your RN interviews &mdash; the single number that kills the Vacutainer objection before it is asked.</p>
+    </div>
+
+    <div class="alert">
+      <h4>6:00&ndash;7:15 &mdash; IV. UVP <span class="tag blue">15 pts</span> <span class="tag">Handoff to B</span></h4>
+      <p><strong>The handoff line. Rehearse until it is invisible:</strong> <em>"So that's who this is for. [Partner], what makes us different?"</em></p>
+      <p style="margin-top:12px;border-left:3px solid var(--teal);padding-left:16px;font-family:var(--f-display);font-weight:600;color:var(--ink);line-height:1.6">"Every device in this space stops at the skin. Vein finders cost three and a half to seven thousand dollars and they show you where the vein is &mdash; then they stop. Nobody measures what happens after the needle goes in, which is the part the patient actually feels."</p>
+      <p style="margin-top:12px"><strong>Then the novelty claim in its survivable form</strong> &mdash; the version that does not collapse when the judge names a competitor. Delivered as a category statement, not a "nobody has ever" claim.</p>
+    </div>
+
+    <div class="alert">
+      <h4>7:15&ndash;11:30 &mdash; V. Solution <span class="tag blue">15 pts</span> <span class="tag teal">Both, trading letters</span></h4>
+      <p><strong>Run TRACE as a dialogue, exactly as ROM did.</strong> B opens with T, then: <em>"So &mdash; what does R stand for?"</em> A takes R. Back and forth through all five. Neither of you disappears, the judge never loses either voice, and the rule that every participant must present is satisfied automatically.</p>
+      <p style="margin-top:12px"><strong>The live demo sits inside C.</strong> One narrates, one operates &mdash; McDonald's technique, no dead air ever. <em>"I'll explain while [partner] sets this up."</em> Then narrate the trace as it draws on screen. Pre-empt the objection mid-demo: <em>"this runs entirely on battery, and the whole kit fits in a coat pocket."</em></p>
+      <p style="margin-top:12px"><span class="tag ox">SLOT</span> the bench numbers &mdash; your measured pressure curve, your timer accuracy, your cuff-versus-aneroid comparison.</p>
+      <p style="margin-top:12px"><strong>Then the economics block, walked through as a guided tour:</strong> bill of materials about $65, kit at $149 to $199, gross margin 45 to 76 percent, membership $49 per clinician per month. Then the hospital case: $383,250 of waste, $73,700 to deploy, roughly $194,300 net in year one.</p>
+      <p style="margin-top:12px"><strong>Then the percentage, which both winning transcripts state explicitly and you previously did not:</strong></p>
+      <p style="margin-top:8px;border-left:3px solid var(--teal);padding-left:16px;font-family:var(--f-display);font-weight:600;color:var(--ink);line-height:1.6">"That's a two hundred and sixty percent return in year one, with payback in about three months."</p>
+      <p style="margin-top:12px"><strong>Humanitarian line, placed here because it doubles as the Vitestro rebuttal:</strong> "The patients this matters most for are paediatric and oncology patients &mdash; and those are exactly the settings the autonomous robot is not authorised for."</p>
+    </div>
+
+    <div class="alert gold">
+      <h4>11:30&ndash;12:00 &mdash; VI. Conclusion and the ask <span class="tag teal">Both</span></h4>
+      <p><strong>The ask, stated plainly.</strong> <span class="tag ox">SLOT</span> the amount and the use of funds &mdash; and say "use of funds," not "what we'd spend it on."</p>
+      <p style="margin-top:12px"><strong>Then the callback, which is the last thing you say about the product:</strong></p>
+      <p style="margin-top:8px;border-left:3px solid var(--teal);padding-left:16px;font-family:var(--f-display);font-weight:600;color:var(--ink);line-height:1.7;font-size:17px">"We started with a patient who got stuck twice. Every redraw we prevent is somebody who doesn't."</p>
+      <p style="margin-top:12px"><strong>Then stop presenting. Then, and only then:</strong></p>
+      <p style="margin-top:8px;border-left:3px solid var(--gold,#b58900);padding-left:16px;font-family:var(--f-display);font-weight:600;color:var(--ink);line-height:1.7;font-size:17px">"We'd rather spend the rest of the time on whatever you're most skeptical about."</p>
+    </div>
+
+    <div class="alert">
+      <h4>How to use this scaffold</h4>
+      <ul class="tight" style="margin-top:10px">
+        <li><strong>Memorise the quoted lines exactly. Improvise everything between them.</strong> A fully memorised script fails badly under nerves &mdash; one forgotten word and you are hunting for the next. Fixed anchors with flexible connective tissue survives a blank, and it sounds like speech rather than recitation.</li>
+        <li><strong>Fill slots only with evidence you actually hold.</strong> An empty slot is a shorter presentation, which costs you far less than a number you cannot defend in Q&amp;A.</li>
+        <li><strong>Speak every quoted line out loud before you accept it.</strong> Some of these will be wrong in your mouth &mdash; too long, wrong rhythm, a word you trip on. Change it. A line you stumble on is worse than a plainer line you own.</li>
+        <li><strong>Second pass in November,</strong> once interviews and bench data are in. That is when this becomes a real script &mdash; and you should be running it whole by early December, five weeks before you submit.</li>
+      </ul>
+    </div>
+
     <div class="alert teal">
       <h4>Two-person speaking split</h4>
       <p>Both of you must present and both must answer questions. Split by domain so Q&amp;A has a clear owner: <strong>Speaker A</strong> takes Overview, Business Opportunity and Customer Segments &mdash; the clinical and market story, including the 85-incident dataset. <strong>Speaker B</strong> takes UVP, Solution and Conclusion &mdash; mechanism, economics, ROI and the ask. Hand off once, cleanly, at the UVP slide. Practice the handoff line until it is invisible. In Q&amp;A, whoever owns the domain answers first; the other adds one sentence only if it adds something.</p>
@@ -2358,21 +2620,32 @@ footer .fn strong{color:#fff}
       <p style="margin-top:.9em"><strong>So mock judging is not practice for you. It is the substitute for an entire competition round.</strong> That is why the back half of this plan is built around it.</p>
     </div>
 
-    <div class="alert">
-      <h4>Time-critical &mdash; your real deadline is probably mid-December, not January</h4>
-      <p>Georgia DECA's State CDC Guide shows the pitch deck is <strong>submitted online weeks before the conference</strong>, not brought with you. For the 2026 conference (Feb 26&ndash;28) the deadline was <strong>January 16 at 5pm</strong> &mdash; a <strong>41-day lead</strong>. Georgia states plainly: <em>"GA DECA will not accept any manuals after this date and time."</em></p>
-      <p style="margin-top:.9em"><strong>Apply that same lead to your January 28&ndash;30 conference and the deadline lands around December 18, 2026.</strong> That is roughly <strong>14 weeks from today, not 20.</strong></p>
-      <p style="margin-top:.9em"><strong>Confirm the exact 2027 date with your advisor this week.</strong> It is the single most important unknown in your plan, and everything upstream of it moves if I am wrong by even a week.</p>
+    <div class="alert gold">
+      <h4>Confirmed dates &mdash; taken from Georgia DECA's own 2027 State CDC page <span class="tag teal">Verified 11 Sep 2026</span></h4>
+      <p>The earlier estimate in this guide was a mid-December deadline extrapolated from the 2026 lead time. <strong>That was wrong, and wrong in your favour.</strong> The official page now lists:</p>
+      <div class="tw" style="margin-top:12px">
+        <table>
+          <thead><tr><th>Date</th><th>What</th><th>Weeks from 11 Sep</th><th>Note</th></tr></thead>
+          <tbody>
+            <tr><td class="ex"><strong>Dec 11, 2026</strong></td><td class="ex"><strong>Conference registration deadline</strong></td><td class="num ex">13</td><td class="ex"><strong>This is the real gate, not the manual deadline.</strong> Miss it and nothing else matters. Team composition locks here.</td></tr>
+            <tr><td><strong>Jan 8, 2027</strong></td><td><strong>Written Event Manuals deadline</strong></td><td class="num">17</td><td>Your deck. Three weeks later than this guide previously assumed.</td></tr>
+            <tr><td>Jan 15, 2027</td><td>Payment deadline</td><td class="num">18</td><td>5% late fee or $50 minimum after this. Advisor's problem, but confirm it happened.</td></tr>
+            <tr><td class="ex"><strong>Jan 28&ndash;30, 2027</strong></td><td class="ex"><strong>State CDC</strong></td><td class="num ex">20</td><td class="ex">Hyatt Regency Atlanta, 265 Peachtree Street. Begins 2pm Thursday, ends 11am Saturday.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:14px"><strong>Two things change because of this.</strong> First, you have <strong>17 weeks to the deck, not 14</strong> &mdash; three extra weeks of evidence-gathering, and the twenty-week plan in this part now lines up almost exactly with the calendar. Second, and more important: <strong>the deck freezes on 8 January and you present on 28 January &mdash; only 20 days apart.</strong> So the heavy rehearsal happens <em>before</em> submission, not after it. Do not plan to "finish the deck then start practising."</p>
+      <p style="margin-top:.9em"><strong>One item to confirm with your advisor, this week:</strong> Georgia lists a <strong>Region Competition on 1 December 2026</strong>. Written events are normally submitted straight to State, and the manual deadline appears under the State CDC registration section &mdash; but if Innovation Plan has to clear Region first, your real deadline moves up by five weeks. <strong>Ask directly: "Does Innovation Plan go through Region, or straight to State?"</strong> It is the last genuine unknown in this plan.</p>
     </div>
 
     <div class="alert teal">
-      <h4>What this means structurally &mdash; the deck freezes six weeks before you present</h4>
-      <p>Once you submit, <strong>the deck is locked.</strong> Every mock after that improves your <em>delivery</em>, not your slides. So the plan splits at the deadline:</p>
+      <h4>What this means structurally &mdash; you only get 20 days on a frozen deck</h4>
+      <p>Once you submit, <strong>the deck is locked.</strong> Every mock after that improves your <em>delivery</em>, not your slides. The plan splits at the deadline &mdash; and the two halves are wildly uneven:</p>
       <ul class="tight" style="margin-top:12px">
-        <li><strong>Before submission (now &rarr; mid-Dec):</strong> all evidence, all building, and <em>the mock rounds whose feedback changes slides</em> &mdash; friendly and scored. If a mock judge says slide 9 is confusing, you need that in November, not January.</li>
-        <li><strong>After submission (mid-Dec &rarr; Jan 28):</strong> pure delivery. Hostile mocks, clinical mocks, cold runs, Q&amp;A drilling. Six weeks of rehearsal on a frozen deck &mdash; which is a genuinely good position to be in.</li>
+        <li><strong>Before submission (now &rarr; 8 Jan &mdash; 17 weeks):</strong> all evidence, all building, and <em>the mock rounds whose feedback changes slides</em> &mdash; friendly and scored. If a mock judge says slide 9 is confusing, you need to hear that in November, not the week of the conference.</li>
+        <li><strong>After submission (8 Jan &rarr; 28 Jan &mdash; <span class="ex">20 days</span>):</strong> pure delivery. Hostile mocks, clinical mocks, cold runs, Q&amp;A drilling. That is three weeks, not six.</li>
       </ul>
-      <p style="margin-top:.9em">Practically: <strong>pull the deck build and the first two mock rounds about three weeks earlier</strong> than the timeline below shows. Deck v1 by early November, scored mocks mid-November, revisions into early December, submit.</p>
+      <p style="margin-top:.9em"><strong>This is the correction that matters most.</strong> Twenty days is not enough to build a presentation on top of a deck you only just finished. <strong>You must already be presenting fluently before you submit</strong> &mdash; the post-submission window is for sharpening, not for learning the material. Target <strong>deck v1 by early November</strong>, scored mocks mid-November, revisions through December, submit a few days early, and arrive at 8 January having already run the thing a dozen times.</p>
     </div>
 
     <h3>How the awards actually work at Georgia State CDC</h3>
@@ -2438,7 +2711,7 @@ footer .fn strong{color:#fff}
         <div class="wb">Nothing this week is glamorous and all of it gates something later.</div>
         <label class="chk"><input type="checkbox" data-k="n1a"><span>Write and launch the clinician survey (10 questions, Part 8). Target 60&ndash;100. Send to all five contacts and ask each to forward.</span></label>
         <label class="chk"><input type="checkbox" data-k="n1b"><span>Order bench parts from the shopping list in Part 8 &mdash; Nano 33 BLE Sense <strong>Rev2 with headers</strong>, MPS20N0040D, BMP280, aneroid sphygmomanometer, needle-free syringes, real tourniquets, blunt-tip cannulas, tubing. $130&ndash;165 recommended, $70&ndash;95 minimum. <strong>No needles.</strong></span></label>
-        <label class="chk"><input type="checkbox" data-k="n1e"><span class="chk"><strong>Confirm the exact 2027 pitch-deck submission deadline with your advisor.</strong> Likely mid-December, roughly six weeks before the conference. Everything in this plan moves if it is different.</span></label>
+        <label class="chk"><input type="checkbox" data-k="n1e"><span class="chk"><strong>Ask your advisor one question: does Innovation Plan go through Region Competition on 1 December, or straight to State?</strong> Dates are otherwise confirmed &mdash; register by 11 Dec, manual due 8 Jan. This is the last real unknown, and everything upstream moves if the answer is Region.</span></label>
         <label class="chk"><input type="checkbox" data-k="n1c"><span>Email the Piedmont supervisor for written sign-off (template in Part 8).</span></label>
         <label class="chk"><input type="checkbox" data-k="n1d"><span>Print the 2026&ndash;27 guidelines, Penalty Point Checklist and Presentation Evaluation Form. Tape the rubric above your desk.</span></label>
       </div>
@@ -2504,7 +2777,7 @@ footer .fn strong{color:#fff}
         <div class="wl">T&minus;4 to T&minus;3 &middot; Dec 31&ndash;Jan 13</div>
         <div class="wt">Round 5 and submission</div>
         <label class="chk"><input type="checkbox" data-k="n8a"><span>Round 5: 4&ndash;5 cold runs on people with zero context. If they can't follow the mechanism, simplify it.</span></label>
-        <label class="chk"><input type="checkbox" data-k="n8b"><span><strong>Submission should already be done by now</strong> if the deadline is mid-December &mdash; verify against the date you confirmed in week one. Georgia accepts nothing late.</span></label>
+        <label class="chk"><input type="checkbox" data-k="n8b"><span><strong>Registration closed 11 December; the manual is due 8 January.</strong> Upload days early, not hours. Georgia accepts nothing late.</span></label>
         <label class="chk"><input type="checkbox" data-k="n8c"><span>Final penalty checklist pass. Re-verify 16:9 on the exported PDF.</span></label>
         <label class="chk"><input type="checkbox" data-k="n8d"><span>Read every slide aloud, backwards, hunting typos. Check every number against Part 4.</span></label>
       </div>
@@ -2550,7 +2823,7 @@ footer .fn strong{color:#fff}
     <div class="band-in">
       <div class="pnum">Part Seven</div>
       <h2>Judge Q&amp;A Drill Bank</h2>
-      <p class="sub">47 questions a venture-capitalist judge will actually ask, with model answers built from your verified facts. Say them out loud until they are yours.</p>
+      <p class="sub">51 questions a venture-capitalist judge will actually ask, with model answers built from your verified facts. Say them out loud until they are yours.</p>
     </div>
   </div>
   <div class="body-wrap">
@@ -2877,7 +3150,41 @@ footer .fn strong{color:#fff}
           <div class="why"><b>Why it works:</b> a judge who went to ICDC reported being asked <em>"who's idea it was and what inspired it"</em> &mdash; so expect this, probably early. It is the strongest origin story available to anyone in your room, and it is true. In under forty seconds it establishes access, rigour and the insight, in that order. Most high-school entries answer this with "we noticed a problem"; you answer it with a dataset. <strong>Two rules: keep it in the past tense &mdash; you no longer work there &mdash; and name your partner's role in the next breath, so the origin never sounds like one person's science project.</strong></div>
         </div>
       </details>
-      <details><summary><span class="qn">47</span><span>Where do you see yourselves in a few years?</span><span class="qx">+</span></summary>
+      <details><summary><span class="qn">47</span><span>You're treating every rejection like it's hemolysis. What about clots and contamination?</span><span class="qx">+</span></summary>
+        <div class="ans">
+          <div class="say"><b>Agree immediately &mdash; then be more precise than they were</b>You're right, and it's worse than that: hemolysis isn't even reliably the top cause. One meta-analysis puts clotting at 32% and hemolysis at 23%. A medical technologist we interviewed ranked hemolysis first and clotting second. It varies by site. What doesn't vary is that the top three &mdash; hemolysis, clotting, contamination &mdash; all happen during the draw. None of them happen in the laboratory.</div>
+          <div class="say"><b>Then take clotting, because you own it</b>Clotting is mostly a fill problem. Blood that enters the tube too slowly sits before it mixes with the additive, and an underfilled tube has the wrong blood-to-additive ratio. Both are fill rate and fill volume &mdash; exactly what the holder collar measures. Same sensor, no extra hardware. A tech told us baby samples clot because the foot draws so slowly, and that is precisely the signal we'd catch.</div>
+          <div class="say"><b>Then concede contamination honestly</b>Contamination we only touch partially. The biggest driver is drawing off an existing line instead of a fresh stick, and a line draw has a different flow signature we can flag. But we don't detect contamination itself &mdash; not skin prep, not order of draw. I'd rather tell you that than claim three out of three.</div>
+          <div class="say"><b>Close on the number</b>So the honest scope is hemolysis and clotting &mdash; together roughly 55% of rejections &mdash; plus a risk flag on the third. That's the majority of the problem with one device.</div>
+          <div class="why"><b>Why it works:</b> this arrived from a physician before it could arrive from a judge, and the answer is <strong>stronger than the claim it replaced</strong> &mdash; it roughly doubles addressable scope while <em>conceding</em> a third of it. The concession is what makes the other two believable. <strong>Never claim contamination.</strong> Overclaim the third and the first two stop being trusted.</div>
+        </div>
+      </details>
+      <details><summary><span class="qn">48</span><span>In the ICU they draw off a central line. There's no tourniquet &mdash; what does your device do?</span><span class="qx">+</span></summary>
+        <div class="ans">
+          <div class="say"><b>Concede the module, keep the product</b>Nothing, for the cuff. There's no tourniquet on a line draw, so that module is idle. I'd rather say that plainly than pretend otherwise.</div>
+          <div class="say"><b>Then what still holds</b>The collar still works, because a line draw still fills tubes &mdash; fill rate, underfill and draw time are all still measured, and that's the clotting pathway. And there's a second thing worth knowing: line draws are the <em>highest</em>-hemolysis collection method in the literature. One emergency department study found 5.6% for catheter draws against 0.3% for fresh venipuncture &mdash; roughly eighteen times. A device that can tell a lab "this one came off a line" is flagging the biggest risk factor they have, and nothing tells them that today.</div>
+          <div class="say"><b>Then be straight about what you don't know</b>What share of ICU labs come off a line versus a fresh stick, I don't know yet. That's on my list for an intensive care nurse, and it decides whether the ICU is a target setting for us at launch or one we stay out of.</div>
+          <div class="why"><b>Why it works:</b> gives up a module in the first sentence, which buys the credibility to keep the product &mdash; then converts the objection into a competitive fact the judge probably did not know. <strong>Ending on a named open question with a named way to close it is the most mature move available in Q&amp;A</strong>, and far better than inventing a share you cannot defend.</div>
+        </div>
+      </details>
+      <details><summary><span class="qn">49</span><span>Why a subscription? In medical devices people pay for hardware, not a service.</span><span class="qx">+</span></summary>
+        <div class="ans">
+          <div class="say"><b>Concede where it's true</b>For an individual clinician you're right, and I've stopped defending it. Nobody buys a personal monthly subscription to clinical equipment &mdash; the thermometer is cheap and the probe covers are where the money is. That instinct is correct.</div>
+          <div class="say"><b>Then give them the industry's own model by name</b>So we don't use a subscription for hospitals. We use reagent rental &mdash; which is how that lab's analyser got there in the first place. The vendor places the instrument at no capital cost, keeps ownership of it, and the lab commits to a minimum volume at a cost per test. We'd do exactly that: place the sensors free, charge ten cents per monitored draw, bundle replacements, training and integration into the term.</div>
+          <div class="say"><b>Then the reason it matters more than the price</b>And the reason that structure wins isn't the number &mdash; it's that we never go to the capital committee. A new vendor with no installed base gets ranked against imaging equipment by a CFO who's never heard of us, and loses. Placement makes us an operating line instead, which gets approved at a lower level on a shorter cycle. At a sixty-five dollar bill of materials, placing a hundred units costs us six and a half thousand dollars against a contract worth seventy-three thousand a year &mdash; so placement pays back in about a month. That's a model that would bankrupt an analyser vendor and costs us almost nothing.</div>
+          <div class="say"><b>Then the part that's actually a product decision</b>And bundling the training isn't packaging &mdash; it's the fix for our biggest risk. The vein finders died in supply closets because nobody was trained on them. A contract that includes in-service training is how we avoid the same closet.</div>
+          <div class="why"><b>Why it works:</b> concedes the retail instinct, then reframes to the buying pattern that actually exists in a lab. <strong>The analyser-contract analogy is the whole answer</strong> &mdash; it moves you into a budget line and approval path that already exist instead of asking a hospital to invent one. Tying the bundle to adoption risk turns a pricing answer into a product answer.</div>
+        </div>
+      </details>
+      <details><summary><span class="qn">50</span><span>You mentioned babies. How does a tourniquet sensor help a heel stick?</span><span class="qx">+</span></summary>
+        <div class="ans">
+          <div class="say"><b>Concede immediately &mdash; this one you lose by defending</b>It doesn't. A heel stick is capillary collection into a microtainer &mdash; no tourniquet, no evacuated tube, nothing for our sensors to attach to. If a hospital's paediatric volume is mostly heel sticks, we're not in that workflow at all.</div>
+          <div class="say"><b>Then take the part that is genuinely yours</b>What we do reach is the mechanism underneath it. A medical technologist told us the reason baby samples fail is that flow is very slow and slow flow clots before the specimen mixes with the tube additive &mdash; and clotting is the second most common rejection reason in her lab. Fill rate is exactly what the holder collar measures. On any paediatric draw that does use a tube, we can flag a fill that is running too slow to mix, in the moment, while it can still be fixed. That's the same physics she described, on the draws we actually touch.</div>
+          <div class="say"><b>Close honestly</b>So the accurate version is: we don't solve paediatrics. We solve one specific failure mode that happens to be worst in paediatrics.</div>
+          <div class="why"><b>Why it works:</b> the instinct is to stretch the product to cover a sympathetic case, and a clinical judge will catch it instantly &mdash; there is no tourniquet on a heel. <strong>Conceding in the first sentence buys you the credibility to claim the narrower thing, which is real.</strong> This is the pattern for every "does it also do X" question: give up the part you don't own, immediately, then be precise about the part you do.</div>
+        </div>
+      </details>
+      <details><summary><span class="qn">51</span><span>Where do you see yourselves in a few years?</span><span class="qx">+</span></summary>
         <div class="ans">
           <div class="say"><b>Answer the company first</b>Three years out, the thing we want isn't a bigger device &mdash; it's the dataset. If the pilot has run and we hold pressure signatures paired with confirmed specimen outcomes at even a handful of sites, we own the only reference standard for what a good venipuncture physically looks like. That's what makes us worth acquiring to a BD or a Labcorp, rather than a hardware vendor competing on price.</div>
           <div class="say"><b>Then ten seconds on the personal half</b>And personally &mdash; I'm going into clinical laboratory science either way. This started because I was reading rejection logs at a bench, and that's the work I want to keep doing. Whether VenoSense is the vehicle or not, the problem doesn't go away.</div>
@@ -2922,6 +3229,24 @@ footer .fn strong{color:#fff}
       <div><div class="sx"><b>Phase 3 &mdash; Reveal and react (4&ndash;5 min)</b>Describe VenoSense in two sentences, then shut up and let them respond.</div></div>
       <div><div class="sx"><b>Phase 4 &mdash; Adoption and money (2&ndash;3 min)</b>Who buys, what stops it.</div></div>
       <div><div class="sx"><b>Phase 5 &mdash; Close (1 min)</b>Permission, referral, thank you.</div></div>
+    </div>
+
+    <div class="alert gold">
+      <h4>Say how long it will take when you ask &mdash; it is why people say yes</h4>
+      <p>Nobody agrees to an open-ended request from a student. <strong>Name the number of questions and the number of minutes in the ask itself</strong>, then stop dead on time. Stopping on time is what earns you the second conversation and the referral.</p>
+      <div class="tw" style="margin-top:12px">
+        <table>
+          <thead><tr><th>Who</th><th class="num">Ask for</th><th class="num">Questions</th><th>What to say</th></tr></thead>
+          <tbody>
+            <tr><td><strong>MD</strong></td><td class="num ex">10 min</td><td class="num">7</td><td class="ex">"Seven questions and I'll stop at ten minutes." Physicians respond to a defined, small ask.</td></tr>
+            <tr><td><strong>Hospital RN</strong></td><td class="num">20 min</td><td class="num">14</td><td>Ask for 20, budget 25. Most run over because they want to talk &mdash; but the <em>ask</em> has to be small.</td></tr>
+            <tr><td><strong>Med tech</strong></td><td class="num">20 min</td><td class="num">14</td><td>Same shape. The Wellstar interview ran roughly this long.</td></tr>
+            <tr><td>Phlebotomist</td><td class="num">15 min</td><td class="num">10</td><td>Shorter set, drawn from the core questions.</td></tr>
+            <tr><td>School nurse</td><td class="num">15 min</td><td class="num">10</td><td>Lower volume, so skip the frequency questions.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:12px"><strong>Two rules.</strong> Never ask for "a few minutes" &mdash; it is vague and it reads as though you have not prepared. And when you reach the time you named, say so out loud: <em>"that's my ten minutes, thank you."</em> Nine times out of ten they will tell you to keep going, and now the extra time is a gift rather than an imposition.</p>
     </div>
 
     <h4 class="sh">Technique &mdash; four habits that separate useful interviews from useless ones</h4>
@@ -3095,6 +3420,105 @@ footer .fn strong{color:#fff}
       <li><strong>"If a rejected sample came with data showing the draw itself was fine, what would you do with that?"</strong> <em>&mdash; tests the attribution value directly, which is your answer to the transport-hemolysis objection</em></li>
       <li>"Does your lab report hemolysis rates to anyone &mdash; quality committee, the floors, CMS reporting?" <em>&mdash; finds out whether your telemetry feeds something they already have to produce</em></li>
     </ul>
+
+    <div class="alert gold">
+      <h4>Interview 1 logged &mdash; medical technologist, Wellstar <span class="tag teal">11 Sep 2026 &middot; second health system</span></h4>
+      <p><strong>Splits her time roughly 50/50 between chemistry and hematology</strong> (she prefers hematology), previously at Emory, and she volunteered that Wellstar's practice is somewhat unusual compared with Emory. <strong>Treat every process answer as one site's practice; treat the knowledge answers as the finding.</strong> <strong>She has given permission to be quoted</strong> &mdash; but everything logged here is paraphrase, so confirm exact wording with her before any sentence goes on a slide.</p>
+
+      <h4 class="sh" style="margin-top:18px">What it confirms</h4>
+      <ul class="tight">
+        <li><strong>Hemolysis is the number one rejection reason &mdash; said unprompted.</strong> Clotted second, contaminated third. <strong>All three originate at collection.</strong> This is independent corroboration of the single-site 85-report dataset, from a different health system, with no leading question in front of it.</li>
+        <li><strong>Rejection rate roughly 5&ndash;10% in chemistry</strong> &mdash; her estimate, and since she works chemistry half the time this carries real weight. It includes wrong-patient and wrong-tube, and it is an impression rather than a pulled report, so present it as a practitioner estimate. <strong>It makes your 1% national modelling assumption look genuinely conservative rather than rhetorically conservative &mdash; you modelled at a fifth to a tenth of what a working chemistry tech estimates.</strong></li>
+        <li><strong>They already track exactly what your telemetry would feed:</strong> rejection counts by type, which floor is rejected most, and three separate turnaround intervals &mdash; collection to receipt, receipt to performance, and result. <strong>Your data does not create a new report. It fills in the missing column of one they already produce.</strong></li>
+        <li><strong>Asked whether tourniquet time on that floor report would be used: yes &mdash; to retrain collection staff.</strong> That is your hospital-tier competency-tracking value proposition, confirmed by the person who would use it.</li>
+        <li><strong>Stack:</strong> Epic LIS; Roche chemistry with Infinity middleware; Sysmex hematology with CareSphere. Middleware holds anything flagged for clot or contamination and a tech calls for recollection. <strong>Use "the line," "auto-validation," "middleware rules," "tech review queue"</strong> &mdash; a modern lab is an automated line, and saying "bench" marks you as an outsider.</li>
+      </ul>
+
+      <h4 class="sh" style="margin-top:18px">What it kills &mdash; retire these claims</h4>
+      <ul class="tight">
+        <li><strong>"The lab doesn't know who collected it."</strong> False. They see collector identity, collection time and receipt time.</li>
+        <li><strong>"Nobody tells the floor why."</strong> False here &mdash; policy requires informing the nurse before rejecting, giving the full reason, documenting it, and reordering on their behalf.</li>
+        <li><strong>"Nobody tracks rejections."</strong> False, and comprehensively so.</li>
+      </ul>
+      <p style="margin-top:.9em">All three were <em>policy</em> claims, and policy varies by system. <strong>Never build an argument on a policy claim.</strong> Build it on instrumentation, which does not vary because the instrument does not exist anywhere.</p>
+
+      <div class="alert teal" style="margin-top:18px">
+        <h4>The finding &mdash; and it is better than the claim it replaced</h4>
+        <p>Asked what causes the hemolysis she sees, a working medical technologist at a major health system said <strong>she does not know</strong>, that the collection staff would know, offered a guess about needle redirection damaging the site, and said to look it up.</p>
+        <p style="margin-top:.9em">Asked whether the floor ever asks why a sample was hemolysed: <strong>they do not ask, because they believe they already know</strong> &mdash; they attribute rejections to their own corner-cutting, chiefly drawing off IV lines and failing to mix tubes.</p>
+        <p style="margin-top:14px"><strong>Put those two together and you have the whole thesis, evidenced:</strong></p>
+        <p style="margin-top:10px;font-size:17px;line-height:1.65;color:var(--ink);font-family:var(--f-display);font-weight:600;border-left:3px solid var(--teal);padding-left:16px">The lab sees the outcome and cannot see the cause. The collector caused it and never sees the outcome. The floor has a folk explanation; the lab has a rejection code. <strong>Nobody in the building holds both halves, and nobody is measuring which explanation is right.</strong></p>
+        <p style="margin-top:14px"><strong>Deliver this as a structural gap, never as incompetence.</strong> Lab staff do not perform collections &mdash; knowing draw technique is not their role, and the person who does know never sees the specimen again. The moment this sounds like "lab staff are ignorant," a healthcare-literate judge turns on you and the argument is lost. The correct frame is that <em>the knowledge is split by design and no instrument bridges it.</em></p>
+        <p style="margin-top:.9em">Note the live tension, and hold it honestly: her floor blames IV draws and poor mixing, which are causes of <em>contamination and clotting</em> &mdash; rejection reasons two and three. Neither she nor the floor offered an explanation for reason <strong>number one</strong>. Saleem's regression did, and found tourniquet time was the only variable that survived. <strong>You are not contradicting her. You are answering the question she said she could not.</strong></p>
+      </div>
+
+      <div class="alert" style="margin-top:18px">
+        <h4>Paediatrics &mdash; your strongest pathos, and a trap sitting right next to it</h4>
+        <p>On why baby samples cause the most friction: they are drawn from the foot, flow is very slow, and slow flow clots. She estimated <strong>over 50% of baby samples clot</strong> &mdash; impression, not a measured statistic, and it must be labelled as such. Then, unprompted:</p>
+        <p style="margin-top:.9em;font-size:17px;line-height:1.65;color:var(--ink);font-family:var(--f-display);font-weight:600;border-left:3px solid var(--gold,#b58900);padding-left:16px">"I feel really bad calling for redraws &mdash; why would you want to put that baby through pain and redraw?"</p>
+        <p style="margin-top:14px"><strong>That is the best pathos line anyone will hand you</strong>, and it is safe to use because it is about the cost of redraws in general, which is exactly what you prevent.</p>
+        <p style="margin-top:14px"><strong>The trap: a heel stick has no tourniquet and no evacuated tube.</strong> It is capillary collection into a microtainer. <strong>VenoSense does nothing for it, and you must never imply otherwise.</strong> If you tell the baby story next to a slide about tourniquet timing, a clinical judge will ask how a cuff sensor helps a heel stick, and the honest answer is that it does not.</p>
+        <p style="margin-top:.9em"><strong>What <em>is</em> honestly in scope</strong> is the mechanism she described: <em>slow fill leads to clotting.</em> The holder collar measures fill rate directly, so it can flag a draw that is filling too slowly to mix with the tube additive &mdash; which is rejection cause number two, and dominant in paediatric venipuncture. <strong>Claim the slow-fill pathway. Do not claim the heel stick.</strong> See drill 48.</p>
+      </div>
+
+      <div class="alert gold" style="margin-top:18px">
+        <h4>The sentence that explains why the biggest problem is the least investigated one</h4>
+        <p>Asked about causes, she said, in substance, that <strong>every med tech normalises hemolysis, because there are simply so many possible causes.</strong></p>
+        <p style="margin-top:14px"><strong>Read that twice. It is the mechanism behind everything else in this interview.</strong> Hemolysis is multi-causal, so no single rejected specimen can be attributed to anything in particular. Because nothing can be attributed, nothing gets investigated. Because nothing gets investigated, the rate never moves &mdash; and a failure that never moves stops registering as a failure at all. <strong>It becomes the weather.</strong></p>
+        <p style="margin-top:.9em">This is the second independent site at which the normalisation finding has appeared, and this time it arrives with its own explanation attached. <strong>It also closes the loop on the two answers above:</strong> the floor does not ask why because they assume they know; the lab does not answer because with that many candidate causes, no honest answer exists. Neither party is being careless. <strong>The information required to settle it has never been collected by anyone.</strong></p>
+        <p style="margin-top:14px"><strong>And this is precisely the argument for measurement over training.</strong> "So many causes" is exactly the condition under which you stop guessing and start instrumenting &mdash; you cannot reason your way from a rejected tube back to a cause, but you can record what happened during the draw and let the data separate them. Saleem did that statistically across 353 draws and found one variable that survived. <strong>You are proposing to do it prospectively, one draw at a time.</strong></p>
+        <p style="margin-top:14px"><strong>Say it on stage roughly like this:</strong></p>
+        <p style="margin-top:10px;font-size:17px;line-height:1.65;color:var(--ink);font-family:var(--f-display);font-weight:600;border-left:3px solid var(--gold,#b58900);padding-left:16px">"A medical technologist at a second health system told us that hemolysis is the number one reason her lab rejects a specimen &mdash; and that techs have normalised it, because there are too many possible causes to chase. That is the whole problem in one sentence. Nobody is measuring, so nobody can attribute, so nothing changes."</p>
+      </div>
+
+      <h4 class="sh" style="margin-top:18px">Follow-ups still owed from this interview</h4>
+      <ul class="tight">
+        <li><strong>A referral onward.</strong> She has given quote permission; the next ask is who else she would introduce you to &mdash; ideally someone on the collection side, since she named them as the people who would actually know the cause.</li>
+        <li><strong>Confirm exact wording before use.</strong> Permission is granted, but everything above is paraphrase. Send her the two or three sentences you actually want to say on stage and get a written yes on the wording.</li>
+        <li><strong>Resolve the paediatric scope question:</strong> do babies get conventional venipuncture as well as heel sticks, and in what proportion? This decides whether the slow-fill claim is worth a slide or a sentence.</li>
+      </ul>
+    </div>
+
+    <div class="alert gold">
+      <h4>Interview 2 logged &mdash; internist, large hospital <span class="tag teal">12 Sep 2026 &middot; 40 minutes</span></h4>
+      <p>18&ndash;20 patients a day, labs already resulted before he rounds. <strong>He red-teamed the business model harder than anyone has, and three of his hits landed.</strong> Paraphrased throughout; confirm wording before quoting.</p>
+
+      <h4 class="sh" style="margin-top:18px">What he killed</h4>
+      <ul class="tight">
+        <li><strong>The discharge-delay cost line is dead.</strong> "No discharge to next day &mdash; it can be done fairly quickly so it usually doesn't." Inpatient redraws are fast because phlebotomy is in the building. The published cost data agrees: a critical-care preanalytical error runs <strong>$162 versus $357 for other inpatients</strong> &mdash; cheaper, not worse. <strong>Never claim redraws delay discharge.</strong></li>
+        <li><strong>"Clinicians" is the wrong unit and the wrong word.</strong> Physicians don't draw blood, and a hospital would not have 100 of anything relevant. Price by <strong>drawing stations</strong> &mdash; phlebotomy team across shifts, ED and ICU carts, one or two per floor unit. Roughly 90&ndash;100 for a 650-bed site, but <strong>verify with a phlebotomy supervisor</strong>; the count survives, the logic must change.</li>
+        <li><strong>The per-seat subscription.</strong> "People pay for the physical part, not a service &mdash; thermometers are cheap, the tips are what companies charge for." See drill 51 for the answer.</li>
+      </ul>
+
+      <div class="alert" style="margin-top:16px">
+        <h4>What the kills convert into &mdash; all three, and two get better</h4>
+        <p><strong>Discharge delay &rarr; a segmentation insight and a better humanitarian line.</strong> Ask <em>why</em> inpatient redraws are cheap: phlebotomy is in the building. Now ask where that isn't true &mdash; outpatient draw centres, rural clinics, home health, nursing homes. <strong>A redraw is cheap when the patient is already in your building and expensive everywhere else.</strong> That points at your rural segment, and it explains something you could not explain before: <strong>the institution with the most draws feels the least pain per draw.</strong> That is why nobody has fixed this.</p>
+        <p style="margin-top:.9em"><strong>Per-seat pricing &rarr; the contract model.</strong> Hospitals already sign annual analyser agreements bundling instrument, reagents, service and training. Structure yours the same way and you enter a budget line and approval path that already exist. Bundling in-service training also attacks your biggest documented risk directly.</p>
+        <p style="margin-top:.9em"><strong>His pricing principle, worth keeping:</strong> he pointed at the cancer drug that costs ten dollars in India and a thousand a month in the United States &mdash; price to the institution's capacity and problem size, not a flat SKU. A rural critical-access hospital and an academic medical centre should not see the same number.</p>
+      </div>
+
+      <div class="alert teal" style="margin-top:16px">
+        <h4>The correction that mattered most &mdash; and it is now Part 4</h4>
+        <p><em>"I didn't hear clots or contamination when you were explaining it."</em> Then the sharper version: the pitch treats every rejection as though it were hemolysis, and they are not. <strong>This was the largest gap in the pitch and fixing it roughly doubled the honest scope.</strong> Full treatment in Part 4, answer in drill 49.</p>
+      </div>
+
+      <div class="alert" style="margin-top:16px">
+        <h4>The secondary market he raised &mdash; and what it is actually worth</h4>
+        <p>"What if the hospitals don't see it that way?" &mdash; and he suggested phlebotomy schools as a fallback. <strong>It is worth more than a fallback:</strong> training programmes assess technique subjectively today, so objective competency scoring is a real product; and more importantly it is where the <em>labelled dataset</em> comes from &mdash; high repetition, no patient risk, no HIPAA complexity, an instructor labelling every draw.</p>
+        <p style="margin-top:.9em"><strong>Decision taken: this stays out of the deck.</strong> Putting training programmes in Customer Segments dilutes the patient story, and the placing pattern rewards the humanitarian frame. <strong>It lives in Q&amp;A only</strong> &mdash; deployed when a judge asks where the training data comes from, or how you validate before a hospital says yes. Never volunteered.</p>
+      </div>
+
+      <h4 class="sh" style="margin-top:18px">Where a physician sits in your evidence &mdash; a finding about roles</h4>
+      <p class="measure">Asked which patients he hates ordering a redraw on, he shrugged &mdash; if the number warrants it, it gets redrawn. <strong>The medical technologist, asked the same shape of question, gave the babies answer unprompted.</strong> That difference is itself the finding: <strong>the person who orders the redraw does not feel its cost.</strong> The tech who calls for it feels it, the nurse who performs it feels it, the patient feels it. <strong>The decision-maker is the one person insulated</strong> &mdash; which is the same normalisation the tech described, seen from the other end. Do not expect pathos from physicians; get it from the people holding the needle.</p>
+
+      <h4 class="sh" style="margin-top:18px">Follow-ups owed</h4>
+      <ul class="tight">
+        <li><strong>Send him the sentences you want to quote</strong> and get written confirmation of wording.</li>
+        <li><strong>Write down every question he stumped you on, verbatim.</strong> Those are worth more than invented drills &mdash; they came from someone with no reason to be gentle.</li>
+        <li><strong>Ask a phlebotomy supervisor</strong> for the real drawing-station count and shift structure.</li>
+        <li><strong>Ask an ICU nurse or intensivist</strong> what share of ICU labs come off a line versus a fresh stick.</li>
+      </ul>
+    </div>
 
     <h4 class="sh">The phlebotomy student</h4>
     <p class="measure">Describe her accurately &mdash; she is the user this is built for, and saying so is a stronger argument than inflating her title. Her value is that she is still <em>learning</em> the hand feel your product replaces with a measurement.</p>
@@ -3586,7 +4010,7 @@ footer .fn strong{color:#fff}
       <p style="font-size:19px;line-height:1.6;color:var(--ink);font-family:var(--f-display);font-weight:600;margin:6px 0 0">"We'd rather spend the rest of the time on whatever you're most skeptical about."</p>
       <p style="margin-top:14px">Say it after the ask, once you have stopped presenting. It does four things at once, and no other sentence in this guide works this hard:</p>
       <ul class="tight" style="margin-top:10px">
-        <li><strong>It creates the Q&amp;A</strong> that the rules say only happens "if time remains" &mdash; so your 47-question bank finally gets used.</li>
+        <li><strong>It creates the Q&amp;A</strong> that the rules say only happens "if time remains" &mdash; so your 51-question bank finally gets used.</li>
         <li><strong>It signals you are not afraid of the hard question</strong>, which is itself the answer to rubric item 10.</li>
         <li><strong>It steers the judge toward ground you have prepared</strong>, because you have rehearsed every objection worth raising.</li>
         <li><strong>It reads as confidence, not bravado</strong> &mdash; you are inviting scrutiny rather than performing certainty.</li>
@@ -3596,17 +4020,17 @@ footer .fn strong{color:#fff}
 
     <h3>Everything you have to produce &mdash; the complete list</h3>
 
-    <p class="measure"><strong>Five deliverables are required &mdash; and one of them was optional until two ICDC competitors independently said otherwise.</strong> Everything else is evidence that lives <em>inside</em> them.</p>
+    <p class="measure"><strong>Five things to produce &mdash; but only the first two are required by DECA, and they are not the ones that win.</strong> Priority order for your hours: <strong>bench rig, leave-behind, then the panel.</strong> Everything else is evidence that lives <em>inside</em> the deck.</p>
 
     <div class="tw">
       <table>
         <thead><tr><th style="width:34px">#</th><th>Deliverable</th><th>When</th><th>Notes</th></tr></thead>
         <tbody>
           <tr><td colspan="4" style="background:var(--rule-2);font-weight:600;color:var(--ink)">Required</td></tr>
-          <tr><td class="num">1</td><td><strong>The 20-slide pitch deck</strong></td><td class="ex">Submitted online, ~mid-Dec</td><td class="ex">16:9. <strong>Export as PDF, never print to PDF.</strong> Frozen once submitted &mdash; this is the only deck that exists.</td></tr>
+          <tr><td class="num">1</td><td><strong>The 20-slide pitch deck</strong></td><td class="ex">Uploaded by <strong>8 Jan 2027</strong></td><td class="ex">16:9. <strong>Export as PDF, never print to PDF.</strong> Frozen once submitted &mdash; this is the only deck that exists.</td></tr>
           <tr><td class="num">2</td><td><strong>Statement of Assurances &amp; Academic Integrity</strong></td><td class="ex">Same submission</td><td class="ex">Separate file, not in the slide numbering. Signed by <strong>both of you and your advisor</strong>. Typed names are not signatures. <strong>Worth 15 penalty points.</strong></td></tr>
           <tr><td class="num">3</td><td><strong>The leave-behind</strong></td><td>Printed, bring it</td><td>One page. Your best chart, the headline numbers, your names. Paper <em>can</em> be left with the judge &mdash; hardware cannot.</td></tr>
-          <tr><td class="num">4</td><td><strong>The poster board</strong> <span class="tag ox">Upgraded</span></td><td>Printed, bring it</td><td class="ex">Four or five panels: the hemolysed-vs-clean photo, the pressure trace, the competitive matrix, the ROI. <strong>Two ICDC competitors independently said to bring physical material and that judges engage with it.</strong> It also cannot run out of battery.</td></tr>
+          <tr><td class="num">4</td><td><strong>The table panel</strong> <span class="tag">Not a foam board</span></td><td>Printed, bring to State</td><td class="ex">Rigid 11&times;17 / A3, or a tri-fold closing to portfolio size &mdash; <strong>no easel.</strong> Four panels: hemolysed-vs-clean photo, pressure trace, competitive matrix, ROI. Your power failsafe. <strong>Lowest of the five in priority</strong> &mdash; one ICDC competitor skipped the board entirely because "everyone does poster boards." Re-decide the format for Anaheim.</td></tr>
           <tr><td class="num">5</td><td><strong>Presentation notes</strong></td><td>Printed, bring it</td><td>Each of you may bring a deck copy or note cards. Bring both, use neither if you can.</td></tr>
           <tr><td colspan="4" style="background:var(--rule-2);font-weight:600;color:var(--ink)">Not separate artifacts &mdash; these live inside the deck</td></tr>
           <tr><td class="num">6</td><td>Bench data and charts</td><td>Slide 13 + appendix</td><td class="ex"><strong>This is why you need no backup deck.</strong> The chart is already on the slide, so a failed demo costs you nothing.</td></tr>
@@ -3614,7 +4038,7 @@ footer .fn strong{color:#fff}
           <tr><td class="num">8</td><td>Bibliography</td><td>Slide 19</td><td>Small type, APA, hanging indents, including your own <em>[Unpublished raw data]</em>.</td></tr>
           <tr><td class="num">9</td><td>CAD render, if you do one</td><td>Slides 12&ndash;13</td><td>Labeled "model, not a manufactured prototype."</td></tr>
           <tr><td colspan="4" style="background:var(--rule-2);font-weight:600;color:var(--ink)">Hand-carried &mdash; hand to the judge, take it back</td></tr>
-          <tr><td class="num">10</td><td><strong>The bench rig</strong></td><td class="ex">Bring it if it works at all</td><td class="ex">Arduino, sensors, syringe, cuff. Must run on battery. Items of monetary value may be handed to a judge but not left. <strong>"We brought a physical item and our judges interacted with it"</strong> &mdash; this is no longer the optional row.</td></tr>
+          <tr><td class="num">10</td><td><strong>The bench rig</strong></td><td class="ex">Bring it if it works at all</td><td class="ex">Arduino, sensors, syringe, cuff. Must run on battery. Items of monetary value may be handed to a judge but not left. <strong>"We brought a prototype of our product"</strong> &mdash; the competitor who had to choose brought this and left the board home. <strong>This is your highest-priority physical item.</strong></td></tr>
           <tr><td class="num">11</td><td>3D-printed housing</td><td>Optional</td><td>Even non-functional. A judge holding your object while you explain the chart is a different conversation.</td></tr>
         </tbody>
       </table>
@@ -3637,7 +4061,7 @@ footer .fn strong{color:#fff}
         <li><strong>Open the PDF before you walk in.</strong> Not the presentation software &mdash; the exported PDF. Fewer things to fail, and it is what the judge has.</li>
         <li><strong>Everything embedded, nothing linked.</strong> No streamed video, no web fonts, no cloud-hosted images, no "click here for the demo." Advisors report conference centres routinely have no wifi at all &mdash; a slide that fetches an asset from the internet is a blank slide, and a font that fails to load reflows every slide it touches.</li>
         <li><strong>Bring a charged power bank</strong> and know whether your laptop charges from it.</li>
-        <li><strong>Bring the printed board &mdash; this is settled, not optional.</strong> Four or five panels: the hemolysed-vs-clean photo, the pressure trace, the competitive matrix, the ROI. Two ICDC competitors independently said to bring physical material and that judges engage with it. It also cannot run out of battery, which makes it your power failsafe at the same time.</li>
+        <li><strong>Bring a printed table panel &mdash; it is your power failsafe.</strong> Rigid 11&times;17 or A3, no easel, four panels: hemolysed-vs-clean photo, pressure trace, competitive matrix, ROI. Paper cannot run out of battery. <strong>Priority note:</strong> one ICDC competitor skipped the board because "everyone does poster boards" and the prototype was the differentiator &mdash; so build the rig first and the panel last.</li>
       </ul>
     </div>
 
@@ -3792,10 +4216,31 @@ footer .fn strong{color:#fff}
     <div class="alert gold">
       <h4>Bring all three &mdash; and the framing insight buried underneath it</h4>
       <p>Same competitor, on physical materials: <em>"YES. Bring something physical whether it is a poster board, handout, or prototype. Maybe even all three. The more engaging you make it the less boring it is for the judge, which will make you stand out amongst peers."</em></p>
-      <p style="margin-top:.9em">That settles the board question, and it is now two independent sources saying judges engage with objects. <strong>Board, leave-behind and bench rig &mdash; all three.</strong> The choreography below matters, because three objects inside a 30-second setup is a rehearsal problem, not a shopping problem.</p>
+      <p style="margin-top:.9em">Two independent sources now say judges engage with physical objects, and that part is settled. <strong>What is not settled is the poster board</strong> &mdash; the next box has the conflict and the decision rule.</p>
       <p style="margin-top:.9em">Then the line worth reading twice: <em>"make sure it's something that is actually a good idea &mdash; usually environmentally friendly or humanitarian ideas win or place."</em></p>
       <p style="margin-top:.9em"><strong>Check that against your own evidence.</strong> The three ICDC decks analysed in this guide are NativeScape (native plant restoration), AeroStem (agricultural supply chain) and HiveGuard (pollinator protection). <strong>All three are environmental.</strong> One competitor's impression is weak evidence on its own &mdash; one competitor's impression that independently matches your own sample of the actual placing decks is a pattern.</p>
       <p style="margin-top:.9em"><strong>What to do with it:</strong> VenoSense is the humanitarian half of that pattern, and you have been under-using it. Patient harm, one in nine patients, the rural counties, the person who gets stuck twice &mdash; that material is not decoration on top of the ROI. The pattern says it is the half that places. <strong>Lead with the patient, support with the arithmetic, and do not turn into a spreadsheet.</strong></p>
+    </div>
+
+    <div class="alert">
+      <h4>The two sources disagree on the board &mdash; and the one who skipped it gave the better reason</h4>
+      <p>The ICDC competitor who was asked directly whether "physical item" meant a prototype or a board:</p>
+      <p style="margin-top:.9em;font-style:italic;color:var(--ink-2);border-left:3px solid var(--rule);padding-left:16px">"We brought a prototype of our product; everyone does poster boards and it didn't seem worth it to travel with all of that."</p>
+      <p style="margin-top:14px"><strong>Correction to this guide:</strong> an earlier version called the board question "settled" and promoted it to required deliverable four on the strength of a single comment. <strong>That was over-claiming.</strong> One source says bring all three; the other brought a prototype and deliberately left the board at home. Both reached ICDC.</p>
+      <p style="margin-top:.9em"><strong>Two things in that quote matter more than the recommendation itself.</strong> First: <em>"everyone does poster boards."</em> If that is even roughly true, a board is not a differentiator &mdash; it is table stakes, and a board that looks like everyone else's buys you nothing. A working prototype is the thing the room does not have. <strong>That sets your priority order: bench rig first, leave-behind second, board last.</strong> Spend your hours accordingly.</p>
+      <p style="margin-top:.9em">Second: <em>"travel with all of that"</em> &mdash; and <strong>this is where their situation is not yours.</strong> They flew to ICDC. <strong>Georgia State CDC is the Hyatt Regency in Atlanta, about thirty minutes from your school.</strong> You are driving. The entire cost side of their argument evaporates for the competition that actually decides whether you advance.</p>
+      <div class="dd" style="margin-top:16px">
+        <div class="win">
+          <div class="hd">Georgia State CDC &mdash; bring it</div>
+          <p>Zero travel cost, and it doubles as your <strong>power failsafe</strong> in a venue that supplies no electricity. It also frees your hands for the rig while something stays visible to the judge for the whole twelve minutes.</p>
+          <p><strong>But cap the effort.</strong> It is last in priority. If the board is eating hours the bench rig needs, the board loses.</p>
+        </div>
+        <div class="lose">
+          <div class="hd">ICDC in Anaheim &mdash; decide again</div>
+          <p>You would be flying a 36&times;48 foam board across the country. <strong>Re-make this decision in March, not now</strong> &mdash; and if it is awkward, the format below solves it.</p>
+        </div>
+      </div>
+      <p style="margin-top:16px"><strong>The format that beats both answers.</strong> Do not build a full foam board on an easel. Build a <strong>rigid 11&times;17 or A3 table panel</strong> &mdash; or a tri-fold that closes to portfolio size. It fits in a backpack, it flies without an argument, <strong>it needs no easel so your setup stays under thirty seconds</strong>, it sits on the table where the judge is already looking, it still works if the laptop dies, and it does not look like the foam board everyone else carried in. <strong>Same four panels: the hemolysed-versus-clean photograph, the pressure trace, the competitive matrix, the ROI.</strong></p>
     </div>
 
     <div class="alert teal">
@@ -3804,10 +4249,10 @@ footer .fn strong{color:#fff}
       <div class="steps">
         <div><div class="sx"><b>Pack the bag in reverse order the night before</b>Board on top, rig next, leave-behinds last. Laptop already open, PDF already on the title slide, brightness already up. Nothing gets unlocked, opened or woken in the room.</div></div>
         <div><div class="sx"><b>Speaker A: handshake, both names, leave-behind</b>Hand the one-pager over in the first ten seconds. Both ICDC transcripts do this at the <em>start</em>, not the end &mdash; so the judge is holding your best chart while you talk.</div></div>
-        <div><div class="sx"><b>Speaker B: board up, rig down, in silence</b>Board on the easel, or leaned against the front of the table facing the judge. Rig flat, powered, LED off. <strong>Say nothing during this.</strong> Silent competence reads better than commentary about your own equipment.</div></div>
+        <div><div class="sx"><b>Speaker B: panel up, rig down, in silence</b>Panel standing on the table facing the judge &mdash; no easel, nothing to assemble. Rig flat, powered, LED off. <strong>Say nothing during this.</strong> Silent competence reads better than commentary about your own equipment.</div></div>
         <div><div class="sx"><b>Both upright, one breath, then open</b>Never start talking while one of you is still bent over a bag. Land in position, breathe once together, then open on the patient line.</div></div>
       </div>
-      <p style="margin-top:14px"><strong>Time this ten times and log every run.</strong> If it runs over 30 seconds, something leaves the bag &mdash; and the first thing to go is the easel, not the board. A board leaned against the front of the table scores exactly the same and costs you twenty seconds less. <strong>If you cannot get under 30, the honest answer is that you have not rehearsed it enough, not that 30 was unrealistic.</strong></p>
+      <p style="margin-top:14px"><strong>Time this ten times and log every run.</strong> The reason the panel format replaced a foam board on an easel is exactly this drill &mdash; an easel is twenty seconds you do not have. <strong>If you cannot get under 30, the honest answer is that you have not rehearsed it enough, not that 30 was unrealistic.</strong></p>
     </div>
 
     <div class="alert">
