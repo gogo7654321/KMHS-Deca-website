@@ -4,7 +4,7 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { FirebaseAnalytics } from '@/components/firebase-analytics';
 
-const SITE_URL = 'https://kmhsdeca.org';
+const SITE_URL = 'https://kmhsdeca.jo3.org';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

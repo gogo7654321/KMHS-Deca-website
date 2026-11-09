@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://kmhsdeca.org';
+  const base = 'https://kmhsdeca.jo3.org';
   const routes = ['', '/leadership', '/compete', '/about', '/contact'];
   return routes.map((r) => ({
     url: `${base}${r}`,
