@@ -4,9 +4,16 @@ import { MessageCircle, GraduationCap, Building2, Globe } from 'lucide-react';
 import { links } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'About',
+  title: 'About Kennesaw Mountain High School DECA',
   description:
-    'About Kennesaw Mountain High School DECA — who we are, what DECA is, and how to get involved.',
+    'Learn what KMHS DECA is, how the Kennesaw Mountain High School chapter helps students grow in business and leadership, and how to get involved.',
+  alternates: { canonical: '/about' },
+  openGraph: {
+    title: 'About Kennesaw Mountain High School DECA',
+    description:
+      'Meet the KMHS DECA chapter, learn about DECA and our advisor, and find out how to join in Kennesaw, Georgia.',
+    url: '/about',
+  },
 };
 
 export default function AboutPage() {

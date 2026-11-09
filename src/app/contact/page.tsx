@@ -4,9 +4,16 @@ import { InstagramIcon, TikTokIcon } from '@/components/social-icons';
 import { links } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Contact',
+  title: 'Contact KMHS DECA in Kennesaw, Georgia',
   description:
-    'Get in touch with Kennesaw Mountain High School DECA — Instagram, GroupMe, and our advisor.',
+    'Contact Kennesaw Mountain High School DECA. Follow @kmhs_deca, join the chapter GroupMe, or reach out to learn how to participate.',
+  alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact KMHS DECA | Kennesaw Mountain High School',
+    description:
+      'Get in touch with the Kennesaw Mountain High School DECA chapter in Kennesaw, Georgia, and find out how to get involved.',
+    url: '/contact',
+  },
 };
 
 const channels = [

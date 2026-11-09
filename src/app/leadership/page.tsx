@@ -4,9 +4,16 @@ import { ExecCard } from '@/components/exec-card';
 import { InstagramIcon } from '@/components/social-icons';
 
 export const metadata: Metadata = {
-  title: 'Leadership',
+  title: 'KMHS DECA Student Leadership',
   description:
-    'Meet the student leadership board of Kennesaw Mountain High School DECA.',
+    'Meet the student officers leading Kennesaw Mountain High School DECA. Get to know the KMHS DECA leadership team and follow chapter updates.',
+  alternates: { canonical: '/leadership' },
+  openGraph: {
+    title: 'KMHS DECA Student Leadership | Kennesaw Mountain High School',
+    description:
+      'Meet the student leadership team of the Kennesaw Mountain High School DECA chapter in Kennesaw, Georgia.',
+    url: '/leadership',
+  },
 };
 
 export default function LeadershipPage() {

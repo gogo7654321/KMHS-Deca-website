@@ -1,8 +1,22 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, MessageCircle, Trophy, ChevronDown, CalendarDays } from 'lucide-react';
 import { benefits, links, nextMeeting } from '@/lib/data';
 import { DecaLogo } from '@/components/deca-logo';
 import { InstagramIcon } from '@/components/social-icons';
+
+export const metadata: Metadata = {
+  title: 'KMHS DECA | Kennesaw Mountain High School DECA',
+  description:
+    'Welcome to Kennesaw Mountain High School DECA in Kennesaw, Georgia. Find chapter information, meet student leaders, explore DECA competitions, and learn how to join.',
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: 'KMHS DECA | Kennesaw Mountain High School DECA',
+    description:
+      'Meet the Kennesaw Mountain High School DECA chapter. Explore business competitions, student leadership, and ways to get involved.',
+    url: '/',
+  },
+};
 
 export default function Home() {
   return (
@@ -31,7 +45,7 @@ export default function Home() {
           <p className="animate-fade-up text-xs font-bold uppercase tracking-[0.35em] text-primary sm:text-sm">
             Kennesaw Mountain Mustangs
           </p>
-          <h1 className="animate-fade-up mt-4 font-headline text-6xl font-bold leading-[0.85] tracking-tight text-white drop-shadow-[0_6px_40px_rgba(0,0,0,0.6)] [animation-delay:100ms] sm:text-8xl md:text-[9.5rem] md:leading-[0.82]">
+          <h1 className="animate-fade-up mt-4 font-headline text-6xl font-bold leading-[0.85] tracking-tight text-white drop-shadow-[0_6px_40px_rgba(0,0,0,0.6)] [animation-delay:100ms] sm:text-8xl">
             KMHS{' '}
             <span className="bg-gradient-to-br from-sky-200 via-primary to-primary bg-clip-text text-transparent">
               DECA
@@ -45,13 +59,13 @@ export default function Home() {
               href={links.groupMe}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-lg font-bold text-primary-foreground shadow-lg shadow-primary/40 transition-all hover:scale-[1.03] hover:bg-primary/90"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-lg font-bold text-primary-foreground shadow-lg shadow-primary/40 transition-all hover:bg-primary/90"
             >
               <MessageCircle className="h-5 w-5" /> Join our GroupMe
             </a>
             <Link
               href="/compete"
-              className="group inline-flex items-center justify-center gap-2 rounded-lg border border-white/40 bg-white/10 px-7 py-3.5 text-lg font-bold text-white backdrop-blur-sm transition-all hover:scale-[1.03] hover:bg-white/20"
+              className="group inline-flex items-center justify-center gap-2 rounded-lg border border-white/40 bg-white/10 px-7 py-3.5 text-lg font-bold text-white backdrop-blur-sm transition-all hover:bg-white/20"
             >
               <Trophy className="h-5 w-5" /> Explore Competition
             </Link>
@@ -291,7 +305,7 @@ export default function Home() {
               href={links.groupMe}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-lg font-bold text-primary-foreground shadow-lg shadow-primary/30 transition-all hover:scale-[1.03] hover:bg-primary/90"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-7 py-3.5 text-lg font-bold text-primary-foreground shadow-lg shadow-primary/30 transition-all hover:bg-primary/90"
             >
               <MessageCircle className="h-5 w-5" /> Join our GroupMe
             </a>

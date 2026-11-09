@@ -9,56 +9,53 @@ const SITE_URL = 'https://kmhsdeca.org';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'KMHS DECA | Kennesaw Mountain High School DECA',
+    default: 'KMHS DECA | Kennesaw Mountain High School',
     template: '%s | KMHS DECA',
   },
   description:
-    'The official website of Kennesaw Mountain High School DECA — compete, lead, and grow in marketing, finance, hospitality, and entrepreneurship. Designed and developed by Neil Mendpara.',
+    'Discover Kennesaw Mountain High School DECA (KMHS DECA) in Kennesaw, Georgia. Explore our chapter, student leadership, business competitions, and how to get involved.',
   applicationName: 'KMHS DECA',
   keywords: [
     'KMHS DECA',
-    'Kennesaw Mountain DECA',
     'Kennesaw Mountain High School DECA',
-    'DECA',
-    'DECA Georgia',
+    'Kennesaw Mountain DECA',
+    'Kennesaw DECA',
+    'Georgia DECA',
     'Cobb County DECA',
-    'high school marketing club',
-    'business club',
-    'Neil Mendpara',
-    'Neil Mendpara developer',
-    'Neil Mendpara Kennesaw Mountain',
-    'Neil Mendpara web developer',
+    'high school business club',
+    'high school marketing competition',
   ],
-  authors: [{ name: 'Neil Mendpara', url: SITE_URL }],
-  creator: 'Neil Mendpara',
   publisher: 'Kennesaw Mountain High School DECA',
-  alternates: { canonical: SITE_URL },
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: SITE_URL,
     siteName: 'KMHS DECA',
-    title: 'KMHS DECA | Kennesaw Mountain High School DECA',
+    title: 'KMHS DECA | Kennesaw Mountain High School',
     description:
-      'Compete, lead, and grow with Kennesaw Mountain High School DECA. Whatever career field you plan on going into, DECA has something to offer you.',
-    // og image is auto-generated from src/app/opengraph-image.png
+      'The Kennesaw Mountain High School DECA chapter helps students build business skills, compete, and grow as leaders.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'KMHS DECA',
+    title: 'KMHS DECA | Kennesaw Mountain High School',
     description:
-      'The official Kennesaw Mountain High School DECA chapter website. Designed & developed by Neil Mendpara.',
-    // twitter image is auto-generated from src/app/twitter-image.png
+      'Explore the Kennesaw Mountain High School DECA chapter, competitions, student leadership, and ways to get involved.',
   },
 };
 
-// Structured data — helps search engines connect this site to KMHS DECA and to
-// its creator, Neil Mendpara.
+// Describe the chapter and its official site without attributing the school
+// website to an individual developer.
 const jsonLd = [
   {
     '@context': 'https://schema.org',
@@ -67,32 +64,25 @@ const jsonLd = [
     alternateName: 'Kennesaw Mountain High School DECA',
     url: SITE_URL,
     description:
-      'Official website of the Kennesaw Mountain High School DECA chapter.',
-    creator: { '@type': 'Person', name: 'Neil Mendpara' },
-    author: { '@type': 'Person', name: 'Neil Mendpara' },
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Person',
-    name: 'Neil Mendpara',
-    url: SITE_URL,
-    jobTitle: 'Web Developer',
-    description:
-      'Neil Mendpara is the web developer who designed and built the Kennesaw Mountain High School DECA website.',
-    knowsAbout: ['Web Development', 'DECA', 'Next.js', 'React', 'Marketing'],
-    worksFor: {
-      '@type': 'EducationalOrganization',
+      'Official website of the Kennesaw Mountain High School DECA chapter in Kennesaw, Georgia.',
+    publisher: {
+      '@type': 'Organization',
       name: 'Kennesaw Mountain High School DECA',
+      url: SITE_URL,
     },
   },
   {
     '@context': 'https://schema.org',
-    '@type': 'EducationalOrganization',
+    '@type': 'Organization',
     name: 'Kennesaw Mountain High School DECA',
     alternateName: 'KMHS DECA',
     url: SITE_URL,
     sameAs: ['https://www.instagram.com/kmhs_deca/'],
     parentOrganization: { '@type': 'Organization', name: 'DECA Inc.' },
+    areaServed: {
+      '@type': 'City',
+      name: 'Kennesaw, Georgia',
+    },
   },
 ];
 
