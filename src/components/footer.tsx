@@ -95,7 +95,14 @@ export function Footer() {
           </p>
           <p>
             Website designed &amp; developed by{' '}
-            <span className="font-semibold text-foreground/80">Neil Mendpara</span>
+            <a
+              href="https://github.com/gogo7654321"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-foreground/80 underline-offset-4 hover:text-primary hover:underline"
+            >
+              Neil Mendpara
+            </a>
           </p>
         </div>
       </div>
